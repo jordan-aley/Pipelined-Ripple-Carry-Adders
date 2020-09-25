@@ -1,0 +1,1197 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/14437/Desktop/Adv_Design_III
+Ebryant_combadd
+w1585692107
+Z0 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 dC:/Users/14437/Desktop/Adv_Design_III/New folder
+8C:/Users/14437/Desktop/Adv_Design_III/New folder/Bryant_CombAdd.vhd
+FC:/Users/14437/Desktop/Adv_Design_III/New folder/Bryant_CombAdd.vhd
+l0
+L5
+VJ6V=5QFKPmOma[c<HWO<01
+!s100 ZWLO<Wz7jUDSG7o83LS6C2
+Z4 OP;C;10.4a;61
+32
+!s110 1585810205
+!i10b 1
+!s108 1585810205.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/Bryant_CombAdd.vhd|
+!s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/Bryant_CombAdd.vhd|
+!i113 1
+Z5 o-work work -2002 -explicit -O0
+Z6 tExplicit 1
+Ebryant_first_bslice
+Z7 w1585811985
+R0
+R1
+R2
+R3
+Z8 8C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_COMPONENTS.vhd
+Z9 FC:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_COMPONENTS.vhd
+l0
+L9
+VgJJcgZa9cC:UWeU;SH==52
+!s100 Q``07:k8?1dGD74Ubeg6z0
+R4
+32
+Z10 !s110 1585812009
+!i10b 1
+Z11 !s108 1585812009.000000
+Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_COMPONENTS.vhd|
+Z13 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_COMPONENTS.vhd|
+!i113 1
+R5
+R6
+Abeh_first_bs
+R0
+R1
+R2
+DEx4 work 19 bryant_first_bslice 0 22 gJJcgZa9cC:UWeU;SH==52
+l23
+L19
+V2]ZNc8ILNCImB5fhI;TmI1
+!s100 :I:C]0nPfL?SN3a5fDAc_2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_firstreg
+R7
+R1
+R2
+R3
+R8
+R9
+l0
+L112
+V>fzXCYn]0[9?S1ZSDYZ9Q1
+!s100 XY^>kgFbk7i?WGQcn?`a@2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Areg16bit_arch
+R1
+R2
+DEx4 work 15 bryant_firstreg 0 22 >fzXCYn]0[9?S1ZSDYZ9Q1
+l136
+L130
+V8TfWMGJ_HV_64Ocf6lQbo3
+!s100 n9;H:@H?DjmlDXL>HSSR_0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_gen_bslice
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L39
+VI`n1Czii?]Fnj<bJ6gmn72
+!s100 XcEZO^?cgBA_[Q10<<8bD1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_bs
+R0
+R1
+R2
+DEx4 work 17 bryant_gen_bslice 0 22 I`n1Czii?]Fnj<bJ6gmn72
+l52
+L50
+VCZ`1a^Nf>>n@KXi]hYz=K0
+!s100 bVXgE^Oh=B`18YinPhF=;3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_genreg
+R7
+R1
+R2
+R3
+R8
+R9
+l0
+L174
+V:`257^KGC^gnW=h8=REkz2
+!s100 M3AOKkz6oh7O<@A?o8gCl0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Areg16bit_arch
+R1
+R2
+DEx4 work 13 bryant_genreg 0 22 :`257^KGC^gnW=h8=REkz2
+l199
+L193
+VZmGEdmYDcJ;M5mnmMT5QH2
+!s100 YSOndzEaLW1cI8287Nj8`1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_lastreg
+R7
+R1
+R2
+R3
+R8
+R9
+l0
+L65
+V4gb]jUoE36<9Ob6dIPAo;1
+!s100 m]T>13c0Ek9UDaPDQEYHV3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Areg16bit_arch
+R1
+R2
+DEx4 work 14 bryant_lastreg 0 22 4gb]jUoE36<9Ob6dIPAo;1
+l84
+L80
+V`cjmjXi=@Y327PV^Y6:nZ3
+!s100 aGA9TZ8KM<5LQ]Ga>?UaB3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_2b
+Z14 w1585809753
+R0
+R1
+R2
+R3
+Z15 8C:\Users\14437\Desktop\Adv_Design_III\New folder\Bryant_RCA_2B.vhd
+Z16 FC:\Users\14437\Desktop\Adv_Design_III\New folder\Bryant_RCA_2B.vhd
+l0
+L5
+Ve1EQ36lI]HFBHdC=<:Y`C2
+!s100 ^IV_<3AM=ekTBWfK]jMo32
+R4
+32
+Z17 !s110 1585812006
+!i10b 1
+Z18 !s108 1585812006.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\14437\Desktop\Adv_Design_III\New folder\Bryant_RCA_2B.vhd|
+Z20 !s107 C:\Users\14437\Desktop\Adv_Design_III\New folder\Bryant_RCA_2B.vhd|
+!i113 1
+R5
+R6
+Abeh
+R0
+R1
+R2
+Z21 DEx4 work 13 bryant_rca_2b 0 22 e1EQ36lI]HFBHdC=<:Y`C2
+l173
+L19
+VPYoNPVN3;?mORzOb@[Bm[3
+!s100 nf8FdRmk_?9Q8aDHSI^bJ3
+R4
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R5
+R6
+Ebryant_rca_4b
+Z22 w1585809795
+R0
+R1
+R2
+R3
+Z23 8C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_4B.vhd
+Z24 FC:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_4B.vhd
+l0
+L5
+V5C0@E;PJGok]L_ZGKBz?21
+!s100 g21en:U>9IQWLMBa^92672
+R4
+32
+R17
+!i10b 1
+R18
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_4B.vhd|
+Z26 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_4B.vhd|
+!i113 1
+R5
+R6
+Abeh
+R0
+R1
+R2
+Z27 DEx4 work 13 bryant_rca_4b 0 22 5C0@E;PJGok]L_ZGKBz?21
+l138
+L19
+VKW9Hj=g9ddTCb>NE2OCl10
+!s100 5An76:?gCB5j^G6oX]1]<2
+R4
+32
+R17
+!i10b 1
+R18
+R25
+R26
+!i113 1
+R5
+R6
+Ebryant_rca_6b
+Z28 w1585809844
+R0
+R1
+R2
+R3
+Z29 8C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_6B.vhd
+Z30 FC:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_6B.vhd
+l0
+L5
+V>@iPakeinNBga@E1P:oee2
+!s100 90f?_Ol:jReN:C91Z4?N[1
+R4
+32
+R17
+!i10b 1
+R18
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_6B.vhd|
+Z32 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_6B.vhd|
+!i113 1
+R5
+R6
+Abeh
+R0
+R1
+R2
+Z33 DEx4 work 13 bryant_rca_6b 0 22 >@iPakeinNBga@E1P:oee2
+l127
+L19
+V?Z12l0D@@g0`8Un>?AC;22
+!s100 PF5GnZgJh@06]`b@I0POL0
+R4
+32
+R17
+!i10b 1
+R18
+R31
+R32
+!i113 1
+R5
+R6
+Ebryant_rca_8b
+Z34 w1585809886
+R0
+R1
+R2
+R3
+Z35 8C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_8B.vhd
+Z36 FC:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_8B.vhd
+l0
+L5
+VfaKE`<BPL7g02g8^W^Scc0
+!s100 U5eH9<03NBSGVoa:H^;j32
+R4
+32
+Z37 !s110 1585812007
+!i10b 1
+Z38 !s108 1585812007.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_8B.vhd|
+Z40 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/BRYANT_RCA_8B.vhd|
+!i113 1
+R5
+R6
+Abeh
+R0
+R1
+R2
+Z41 DEx4 work 13 bryant_rca_8b 0 22 faKE`<BPL7g02g8^W^Scc0
+l122
+L19
+VAXFaT][]NXM31P@V;n5S42
+!s100 8;WVi3Q@ekfDaF93Qzk9P1
+R4
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R5
+R6
+Ebryant_rca_first_2b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L239
+VInfaMDC6O=fzJMmGVTCIV1
+!s100 =fch54Pi<jL35VNhK:KLJ3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_first_2b
+R0
+R1
+R2
+DEx4 work 19 bryant_rca_first_2b 0 22 InfaMDC6O=fzJMmGVTCIV1
+l279
+L250
+V4P>N0PUoeXXFF[jL^aY=83
+!s100 4zDXE:YHD97:28VH9_3]J0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_first_4b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L348
+Vk[Y26knnVfbFYzP5FjgAb2
+!s100 z9NTmj^_eKlgk>7TKYD9W0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_first_4b
+R0
+R1
+R2
+DEx4 work 19 bryant_rca_first_4b 0 22 k[Y26knnVfbFYzP5FjgAb2
+l392
+L359
+VRAnLm:4omYZ:NQYGTO2PR2
+!s100 hSC1V@Rkz9g<_H]BFDXMT3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_first_6b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L475
+V^<daDcRE]J_<zgH5Aa@YK3
+!s100 LL[WNRoQf1=Db]?66lFFE2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_first_6b
+R0
+R1
+R2
+DEx4 work 19 bryant_rca_first_6b 0 22 ^<daDcRE]J_<zgH5Aa@YK3
+l523
+L486
+VNa]olEgK@gZfnXESYJJNM0
+!s100 _5RJmz>jRn;INTa21MiIj2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_first_8b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L620
+V1[;3fS86`jMin[Gmm5c2C3
+!s100 U[EZWU0IZ1aoaZCHXPCeU1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_first_8b
+R0
+R1
+R2
+DEx4 work 19 bryant_rca_first_8b 0 22 1[;3fS86`jMin[Gmm5c2C3
+l672
+L631
+VnADe=lBe?3fk2Ibo9Rf:[0
+!s100 M?jE5;M:IF21nWk4?@NhA1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_gen_2b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L298
+VTL`aFe8oU0ZcTo77RI5;X3
+!s100 fY4B^d]MRfJLI2[7SbS<A2
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_gen_2b
+R0
+R1
+R2
+DEx4 work 17 bryant_rca_gen_2b 0 22 TL`aFe8oU0ZcTo77RI5;X3
+l330
+L310
+VndMQ@X4]fDiecHIS1dXED2
+!s100 `m__7dcQm;TXad?dJ=VXR3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_gen_4b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L415
+VSd=MK?=h_G:oE:;H>P`770
+!s100 ^<N1ca>gg><hO=3QfEf]e0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_gen_4b
+R0
+R1
+R2
+DEx4 work 17 bryant_rca_gen_4b 0 22 Sd=MK?=h_G:oE:;H>P`770
+l451
+L427
+V?S>YdFRkO6ENA2Lz18<4O2
+!s100 `BofF5g:E>5UhmFZOYT[e0
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_gen_6b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L552
+VKVPhC@Ll5fTbLP;e652Lz2
+!s100 31mWJeV7A2cL]RcBQJaB<1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_gen_6b
+R0
+R1
+R2
+DEx4 work 17 bryant_rca_gen_6b 0 22 KVPhC@Ll5fTbLP;e652Lz2
+l592
+L564
+VAlXomF8Bl<Lz6FP>ZKzSO2
+!s100 QN6K@RS9oB1Hf7[Um8?^o1
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ebryant_rca_gen_8b
+R7
+R0
+R1
+R2
+R3
+R8
+R9
+l0
+L704
+VWT_Ef=0a>74RTk40>Y>mL3
+!s100 DWnozNz37TIhnE3iEUVMB3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Abeh_gen_8b
+R0
+R1
+R2
+DEx4 work 17 bryant_rca_gen_8b 0 22 WT_Ef=0a>74RTk40>Y>mL3
+l748
+L716
+VVU?NY>TVGH5hnYd?4T48G1
+!s100 _X=jj06Xez_MZRa>=87SI3
+R4
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R5
+R6
+Ccfg_tb_bryant_rca_2b
+etb_BRYANT_RCA_2B
+Z42 aTESTBENCH
+Z43 DEx4 work 5 clock 0 22 BJ_N`S7LaHPBN_`NNg8c=0
+R0
+R21
+DAx4 work 16 tb_bryant_rca_2b 9 testbench 22 ^b1AT_]LK3<_2Vk?SH]z70
+Z44 DPx4 work 8 txt_util 0 22 [g4TlI6Md[=?O_ZLEz3kI3
+Z45 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+Z46 DPx4 work 6 clocks 0 22 1@2:0O9>FT`kdM>VkbCTH3
+Z47 DEx4 work 16 tb_bryant_rca_2b 0 22 nXa34YODTJ8kCiBK_];9B1
+Z48 w1585811755
+R3
+Z49 8C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_2B.vhdl
+Z50 FC:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_2B.vhdl
+l0
+L227
+V^X8ocjdY[QU`MllGV7mZ41
+!s100 =odCEPPg?jX[WCM3EB?b_2
+R4
+32
+R10
+!i10b 0
+R11
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_2B.vhdl|
+Z52 !s107 C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_2B.vhdl|
+!i113 1
+R5
+R6
+Ccfg_tb_bryant_rca_4b
+etb_BRYANT_RCA_4B
+R42
+R43
+R0
+R27
+DAx4 work 16 tb_bryant_rca_4b 9 testbench 22 H:j<zSHdi@@Pefn6>eKba0
+R44
+R45
+R1
+R2
+R46
+Z53 DEx4 work 16 tb_bryant_rca_4b 0 22 7eRlK@@gU0BihENehSc]c2
+Z54 w1585811737
+R3
+Z55 8C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_4B.vhdl
+Z56 FC:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_4B.vhdl
+l0
+L229
+V1KMPfXPc[m?2`2[NIaX6_3
+!s100 CS3G2ocH<E@O@O=EIYn=B3
+R4
+32
+Z57 !s110 1585812008
+!i10b 0
+Z58 !s108 1585812008.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_4B.vhdl|
+Z60 !s107 C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_4B.vhdl|
+!i113 1
+R5
+R6
+Ccfg_tb_bryant_rca_6b
+etb_BRYANT_RCA_6B
+R42
+R43
+R0
+R33
+DAx4 work 16 tb_bryant_rca_6b 9 testbench 22 UfShlbEQ]zn4=]UF2C[m]2
+R44
+R45
+R1
+R2
+R46
+Z61 DEx4 work 16 tb_bryant_rca_6b 0 22 `a9kh?UT:1=]?4zWISP5L1
+Z62 w1585811761
+R3
+Z63 8C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_6B.vhdl
+Z64 FC:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_6B.vhdl
+l0
+L229
+VUXz?:;_`cm:gTZfO1fFlZ3
+!s100 :NUHjDgiIWkh?15CK^7k[0
+R4
+32
+R10
+!i10b 0
+R58
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_6B.vhdl|
+Z66 !s107 C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_6B.vhdl|
+!i113 1
+R5
+R6
+Ccfg_tb_bryant_rca_8b
+etb_BRYANT_RCA_8B
+R42
+R43
+R0
+R41
+DAx4 work 16 tb_bryant_rca_8b 9 testbench 22 1mT3]OP2kW[A9=FzjDJRI3
+R44
+R45
+R1
+R2
+R46
+Z67 DEx4 work 16 tb_bryant_rca_8b 0 22 [;9RK@XS=WiDC<8`D`9910
+Z68 w1585811745
+R3
+Z69 8C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_8B.vhdl
+Z70 FC:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_8B.vhdl
+l0
+L229
+V@?L_NBZiHm7lT8;emzQTR1
+!s100 ]8[Hg[X<`d5RJ9XN9;3WA0
+R4
+32
+R57
+!i10b 0
+R58
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_8B.vhdl|
+Z72 !s107 C:\Users\14437\Desktop\Adv_Design_III\New folder\tb_BRYANT_RCA_8B.vhdl|
+!i113 1
+R5
+R6
+Eclock
+Z73 w1585689802
+R1
+R2
+R3
+Z74 8C:/Users/14437/Desktop/Adv_Design_III/New folder/clock.vhd
+Z75 FC:/Users/14437/Desktop/Adv_Design_III/New folder/clock.vhd
+l0
+L90
+VBJ_N`S7LaHPBN_`NNg8c=0
+!s100 kBfTcSciLe`D8eAQkFdT02
+R4
+32
+R37
+!i10b 1
+R38
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/clock.vhd|
+Z77 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/clock.vhd|
+!i113 1
+R5
+R6
+Abehavior
+R1
+R2
+R43
+l97
+L94
+VnjUYQ`KKLnX]lzdeiY7:V2
+!s100 @TEnz@6U=jFD1a3;liBRV3
+R4
+32
+R37
+!i10b 1
+R38
+R76
+R77
+!i113 1
+R5
+R6
+Pclocks
+R45
+R1
+R2
+R73
+R3
+R74
+R75
+l0
+L7
+V1@2:0O9>FT`kdM>VkbCTH3
+!s100 V=QgQHBoCBX?cljYQ]zi>1
+R4
+32
+b1
+R37
+!i10b 1
+R38
+R76
+R77
+!i113 1
+R5
+R6
+Bbody
+R46
+R45
+R1
+R2
+l0
+L21
+Vd2>M80RT]kBZfcabU@`k23
+!s100 UU>Bm=]JnSjDZk`0`H9Hi3
+R4
+32
+R37
+!i10b 1
+R38
+R76
+R77
+!i113 1
+R5
+R6
+Z78 nbody
+Elc3_memory
+R73
+R0
+Z79 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R45
+R1
+R2
+R46
+R3
+R74
+R75
+l0
+L118
+VMGiiZa5>;6ERbheXPOGFC2
+!s100 X>becR6[DiBPVE_@zm>[12
+R4
+32
+R37
+!i10b 1
+R38
+R76
+R77
+!i113 1
+R5
+R6
+Abehavioral
+R0
+R79
+R45
+R1
+R2
+R46
+DEx4 work 10 lc3_memory 0 22 MGiiZa5>;6ERbheXPOGFC2
+l130
+L129
+VmKc8HjH2@]Jb^JUJRjjom3
+!s100 ]UIT8kCQRcegC`<cBmUh90
+R4
+32
+R37
+!i10b 1
+R38
+R76
+R77
+!i113 1
+R5
+R6
+Etb_bryant_rca_2b
+R48
+R44
+R45
+R1
+R2
+R46
+R3
+R49
+R50
+l0
+L19
+VnXa34YODTJ8kCiBK_];9B1
+!s100 B8c8O>^HbAIbOHa8QhB:f3
+R4
+32
+R10
+!i10b 1
+R11
+R51
+R52
+!i113 1
+R5
+R6
+Atestbench
+R44
+R45
+R1
+R2
+R46
+R47
+l80
+L22
+V^b1AT_]LK3<_2Vk?SH]z70
+!s100 N5lO^F:c@i4?]WLdBl77F0
+R4
+32
+R10
+!i10b 1
+R11
+R51
+R52
+!i113 1
+R5
+R6
+Etb_bryant_rca_4b
+R54
+R44
+R45
+R1
+R2
+R46
+R3
+R55
+R56
+l0
+L19
+V7eRlK@@gU0BihENehSc]c2
+!s100 P[QGc9_UVVO;R=<_gE>O=2
+R4
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R5
+R6
+Atestbench
+R44
+R45
+R1
+R2
+R46
+R53
+l82
+L22
+VH:j<zSHdi@@Pefn6>eKba0
+!s100 oHOOP1iRilfEWFfI8VN5m1
+R4
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R5
+R6
+Etb_bryant_rca_6b
+R62
+R44
+R45
+R1
+R2
+R46
+R3
+R63
+R64
+l0
+L19
+V`a9kh?UT:1=]?4zWISP5L1
+!s100 aSi[S55:D<lJBYM2KOjlo1
+R4
+32
+R57
+!i10b 1
+R58
+R65
+R66
+!i113 1
+R5
+R6
+Atestbench
+R44
+R45
+R1
+R2
+R46
+R61
+l82
+L22
+VUfShlbEQ]zn4=]UF2C[m]2
+!s100 658Hj9fRHSUjD9Jej0P`H2
+R4
+32
+R57
+!i10b 1
+R58
+R65
+R66
+!i113 1
+R5
+R6
+Etb_bryant_rca_8b
+R68
+R44
+R45
+R1
+R2
+R46
+R3
+R69
+R70
+l0
+L19
+V[;9RK@XS=WiDC<8`D`9910
+!s100 <IMd4L7aFMFbGS_IAPYzT0
+R4
+32
+R57
+!i10b 1
+R58
+R71
+R72
+!i113 1
+R5
+R6
+Atestbench
+R44
+R45
+R1
+R2
+R46
+R67
+l82
+L22
+V1mT3]OP2kW[A9=FzjDJRI3
+!s100 oA<nic[R66ABa9Eze^bO00
+R4
+32
+R57
+!i10b 1
+R58
+R71
+R72
+!i113 1
+R5
+R6
+Ptxt_util
+R1
+R2
+Z80 w1585689803
+R3
+Z81 8C:/Users/14437/Desktop/Adv_Design_III/New folder/txt_util.vhd
+Z82 FC:/Users/14437/Desktop/Adv_Design_III/New folder/txt_util.vhd
+l0
+L6
+V[g4TlI6Md[=?O_ZLEz3kI3
+!s100 C4m7@Ec3EHGT9<Hd<k8;n0
+R4
+32
+b1
+R37
+!i10b 1
+R38
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/14437/Desktop/Adv_Design_III/New folder/txt_util.vhd|
+Z84 !s107 C:/Users/14437/Desktop/Adv_Design_III/New folder/txt_util.vhd|
+!i113 1
+R5
+R6
+Bbody
+R44
+R1
+R2
+l0
+L89
+Vd>@;D?YbZGhe[F`72e?k50
+!s100 C4ZeJVQGBo4[zZm^8kGcR3
+R4
+32
+R37
+!i10b 1
+R38
+R83
+R84
+!i113 1
+R5
+R6
+R78

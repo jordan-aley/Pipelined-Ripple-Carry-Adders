@@ -1,0 +1,2912 @@
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------COMB--------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: ALEY_RCA_COMB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALEY_RCA_COMB.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALEY_RCA_COMB"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : ALEY_RCA_COMB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/virtualboxtesting/ALEY_COMPONENTS.vhd" in Library work.
+Architecture beh_first_bs of Entity ALEY_first_bslice is up to date.
+Architecture beh_bs of Entity ALEY_gen_bslice is up to date.
+Architecture reg16bit_arch of Entity ALEY_firstreg is up to date.
+Architecture reg16bit_arch of Entity ALEY_lastreg is up to date.
+Architecture reg16bit_arch of Entity ALEY_genreg is up to date.
+Architecture reg16bit_arch of Entity ALEY_sumreg is up to date.
+Architecture beh_first_2b of Entity ALEY_rca_first_2b is up to date.
+Architecture beh_gen_2b of Entity ALEY_rca_gen_2b is up to date.
+Architecture beh_first_4b of Entity ALEY_rca_first_4b is up to date.
+Architecture beh_gen_4b of Entity ALEY_rca_gen_4b is up to date.
+Architecture beh_first_6b of Entity ALEY_rca_first_6b is up to date.
+Architecture beh_gen_6b of Entity ALEY_rca_gen_6b is up to date.
+Architecture beh_first_8b of Entity ALEY_rca_first_8b is up to date.
+Architecture beh_gen_8b of Entity ALEY_rca_gen_8b is up to date.
+Compiling vhdl file "/home/ise/virtualboxtesting/ALEY_RIPPLE.vhd" in Library work.
+Entity <ALEY_RCA_COMB> compiled.
+Entity <ALEY_RCA_COMB> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALEY_RCA_COMB> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 2
+
+Analyzing hierarchy for entity <ALEY_First_BSlice> in library <work> (architecture <beh_first_bs>).
+
+Analyzing hierarchy for entity <ALEY_GEN_BSlice> in library <work> (architecture <beh_bs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ALEY_RCA_COMB> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 2
+Entity <ALEY_RCA_COMB> analyzed. Unit <ALEY_RCA_COMB> generated.
+
+Analyzing Entity <ALEY_First_BSlice> in library <work> (Architecture <beh_first_bs>).
+Entity <ALEY_First_BSlice> analyzed. Unit <ALEY_First_BSlice> generated.
+
+Analyzing Entity <ALEY_GEN_BSlice> in library <work> (Architecture <beh_bs>).
+Entity <ALEY_GEN_BSlice> analyzed. Unit <ALEY_GEN_BSlice> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALEY_First_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <ALEY_First_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_GEN_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <ALEY_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_COMB>.
+    Related source file is "/home/ise/virtualboxtesting/ALEY_RIPPLE.vhd".
+Unit <ALEY_RCA_COMB> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALEY_RCA_COMB> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALEY_RCA_COMB, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALEY_RCA_COMB.ngr
+Top Level Output File Name         : ALEY_RCA_COMB
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 73
+
+Cell Usage :
+# BELS                             : 47
+#      LUT2                        : 1
+#      LUT3                        : 44
+#      LUT4                        : 2
+# IO Buffers                       : 73
+#      IBUF                        : 48
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12sf363-12 
+
+ Number of Slices:                       27  out of   5472     0%  
+ Number of 4 input LUTs:                 47  out of  10944     0%  
+ Number of IOs:                          73
+ Number of bonded IOBs:                  73  out of    240    30%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 17.166ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 648 / 25
+-------------------------------------------------------------------------
+Delay:               17.166ns (Levels of Logic = 25)
+  Source:            Op_A<1> (PAD)
+  Destination:       SUM_Q<23> (PAD)
+
+  Data Path: Op_A<1> to SUM_Q<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.754   0.567  Op_A_1_IBUF (Op_A_1_IBUF)
+     LUT4:I0->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice1/Carry_Q1 (c2)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice2/Carry_Q1 (c3)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice3/Carry_Q1 (c4)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice4/Carry_Q1 (c5)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice5/Carry_Q1 (c6)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice6/Carry_Q1 (c7)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice7/Carry_Q1 (c8)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice8/Carry_Q1 (c9)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice9/Carry_Q1 (c10)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice10/Carry_Q1 (c11)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice11/Carry_Q1 (c12)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice12/Carry_Q1 (c13)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice13/Carry_Q1 (c14)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice14/Carry_Q1 (c15)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice15/Carry_Q1 (c16)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice16/Carry_Q1 (c17)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice17/Carry_Q1 (c18)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice18/Carry_Q1 (c19)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice19/Carry_Q1 (c20)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice20/Carry_Q1 (c21)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_COMB_GEN_Slice21/Carry_Q1 (c22)
+     LUT3:I2->O            2   0.147   0.527  InstALEY_COMB_GEN_Slice22/Carry_Q1 (c23)
+     LUT3:I0->O            1   0.147   0.266  InstALEY_COMB_GEN_Slice23/Mxor_SUM_Q_Result1 (SUM_Q_23_OBUF)
+     OBUF:I->O                 3.255          SUM_Q_23_OBUF (SUM_Q<23>)
+    ----------------------------------------
+    Total                     17.166ns (7.390ns logic, 9.776ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.14 secs
+ 
+--> 
+
+
+Total memory usage is 631184 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------2B--------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: ALEY_RCA_2B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALEY_RCA_2B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALEY_RCA_2B"
+Output Format                      : NGC
+Target Device                      : xc4vlx100-12-ff1148
+
+---- Source Options
+Top Module Name                    : ALEY_RCA_2B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 48
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" in Library work.
+Entity <ALEY_First_BSlice> compiled.
+Entity <ALEY_First_BSlice> (Architecture <BEH_first_BS>) compiled.
+Entity <ALEY_GEN_BSlice> compiled.
+Entity <ALEY_GEN_BSlice> (Architecture <BEH_BS>) compiled.
+Entity <ALEY_LastReg> compiled.
+Entity <ALEY_LastReg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_FirstReg> compiled.
+Entity <ALEY_FirstReg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_GenReg> compiled.
+Entity <ALEY_GenReg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_RCA_First_2B> compiled.
+Entity <ALEY_RCA_First_2B> (Architecture <beh_first_2B>) compiled.
+Entity <ALEY_RCA_GEN_2B> compiled.
+Entity <ALEY_RCA_GEN_2B> (Architecture <beh_gen_2B>) compiled.
+Entity <ALEY_RCA_First_4B> compiled.
+Entity <ALEY_RCA_First_4B> (Architecture <beh_first_4B>) compiled.
+Entity <ALEY_RCA_GEN_4B> compiled.
+Entity <ALEY_RCA_GEN_4B> (Architecture <beh_gen_4B>) compiled.
+Entity <ALEY_RCA_First_6B> compiled.
+Entity <ALEY_RCA_First_6B> (Architecture <beh_first_6B>) compiled.
+Entity <ALEY_RCA_GEN_6B> compiled.
+Entity <ALEY_RCA_GEN_6B> (Architecture <beh_gen_6B>) compiled.
+Entity <ALEY_RCA_First_8B> compiled.
+Entity <ALEY_RCA_First_8B> (Architecture <beh_first_8B>) compiled.
+Entity <ALEY_RCA_GEN_8B> compiled.
+Entity <ALEY_RCA_GEN_8B> (Architecture <beh_gen_8B>) compiled.
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_RCA_2B.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_RCA_2B.vhd" is newer than current system time.
+Entity <ALEY_RCA_2B> compiled.
+Entity <ALEY_RCA_2B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALEY_RCA_2B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 2
+
+Analyzing hierarchy for entity <ALEY_RCA_First_2B> in library <work> (architecture <beh_first_2B>) with generics.
+	BITS2 = 2
+
+Analyzing hierarchy for entity <ALEY_FirstReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 22
+
+Analyzing hierarchy for entity <ALEY_RCA_GEN_2B> in library <work> (architecture <beh_gen_2B>) with generics.
+	BITS2 = 2
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 2
+	sumsize = 4
+	w = 20
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 4
+	sumsize = 6
+	w = 18
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 6
+	sumsize = 8
+	w = 16
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 8
+	sumsize = 10
+	w = 14
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 10
+	sumsize = 12
+	w = 12
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 12
+	sumsize = 14
+	w = 10
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 14
+	sumsize = 16
+	w = 8
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 16
+	sumsize = 18
+	w = 6
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 18
+	sumsize = 20
+	w = 4
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 20
+	sumsize = 22
+	w = 2
+
+Analyzing hierarchy for entity <ALEY_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	prevbbits = 22
+	sumsize = 24
+
+Analyzing hierarchy for entity <ALEY_First_BSlice> in library <work> (architecture <BEH_first_BS>).
+
+Analyzing hierarchy for entity <ALEY_GEN_BSlice> in library <work> (architecture <BEH_BS>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ALEY_RCA_2B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 2
+
+Entity <ALEY_RCA_2B> analyzed. Unit <ALEY_RCA_2B> generated.
+
+Analyzing generic Entity <ALEY_RCA_First_2B> in library <work> (Architecture <beh_first_2B>).
+	BITS2 = 2
+Entity <ALEY_RCA_First_2B> analyzed. Unit <ALEY_RCA_First_2B> generated.
+
+Analyzing Entity <ALEY_First_BSlice> in library <work> (Architecture <BEH_first_BS>).
+Entity <ALEY_First_BSlice> analyzed. Unit <ALEY_First_BSlice> generated.
+
+Analyzing Entity <ALEY_GEN_BSlice> in library <work> (Architecture <BEH_BS>).
+Entity <ALEY_GEN_BSlice> analyzed. Unit <ALEY_GEN_BSlice> generated.
+
+Analyzing generic Entity <ALEY_FirstReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 22
+Entity <ALEY_FirstReg> analyzed. Unit <ALEY_FirstReg> generated.
+
+Analyzing generic Entity <ALEY_RCA_GEN_2B> in library <work> (Architecture <beh_gen_2B>).
+	BITS2 = 2
+Entity <ALEY_RCA_GEN_2B> analyzed. Unit <ALEY_RCA_GEN_2B> generated.
+
+Analyzing generic Entity <ALEY_GenReg.1> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 2
+	sumsize = 4
+	w = 20
+Entity <ALEY_GenReg.1> analyzed. Unit <ALEY_GenReg.1> generated.
+
+Analyzing generic Entity <ALEY_GenReg.2> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 4
+	sumsize = 6
+	w = 18
+Entity <ALEY_GenReg.2> analyzed. Unit <ALEY_GenReg.2> generated.
+
+Analyzing generic Entity <ALEY_GenReg.3> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 6
+	sumsize = 8
+	w = 16
+Entity <ALEY_GenReg.3> analyzed. Unit <ALEY_GenReg.3> generated.
+
+Analyzing generic Entity <ALEY_GenReg.4> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 8
+	sumsize = 10
+	w = 14
+Entity <ALEY_GenReg.4> analyzed. Unit <ALEY_GenReg.4> generated.
+
+Analyzing generic Entity <ALEY_GenReg.5> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 10
+	sumsize = 12
+	w = 12
+Entity <ALEY_GenReg.5> analyzed. Unit <ALEY_GenReg.5> generated.
+
+Analyzing generic Entity <ALEY_GenReg.6> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 12
+	sumsize = 14
+	w = 10
+Entity <ALEY_GenReg.6> analyzed. Unit <ALEY_GenReg.6> generated.
+
+Analyzing generic Entity <ALEY_GenReg.7> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 14
+	sumsize = 16
+	w = 8
+Entity <ALEY_GenReg.7> analyzed. Unit <ALEY_GenReg.7> generated.
+
+Analyzing generic Entity <ALEY_GenReg.8> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 16
+	sumsize = 18
+	w = 6
+Entity <ALEY_GenReg.8> analyzed. Unit <ALEY_GenReg.8> generated.
+
+Analyzing generic Entity <ALEY_GenReg.9> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 18
+	sumsize = 20
+	w = 4
+Entity <ALEY_GenReg.9> analyzed. Unit <ALEY_GenReg.9> generated.
+
+Analyzing generic Entity <ALEY_GenReg.10> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 20
+	sumsize = 22
+	w = 2
+Entity <ALEY_GenReg.10> analyzed. Unit <ALEY_GenReg.10> generated.
+
+Analyzing generic Entity <ALEY_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	prevbbits = 22
+	sumsize = 24
+Entity <ALEY_LastReg> analyzed. Unit <ALEY_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALEY_FirstReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 22-bit register for signal <sAout>.
+    Found 22-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  47 D-type flip-flop(s).
+Unit <ALEY_FirstReg> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_1>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 20-bit register for signal <sAout>.
+    Found 20-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 4-bit register for signal <sSumout>.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+Unit <ALEY_GenReg_1> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_2>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 18-bit register for signal <sAout>.
+    Found 18-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 6-bit register for signal <sSumout>.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+Unit <ALEY_GenReg_2> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_3>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 16-bit register for signal <sAout>.
+    Found 16-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred  41 D-type flip-flop(s).
+Unit <ALEY_GenReg_3> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_4>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 14-bit register for signal <sAout>.
+    Found 14-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 10-bit register for signal <sSumout>.
+    Summary:
+	inferred  39 D-type flip-flop(s).
+Unit <ALEY_GenReg_4> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_5>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 12-bit register for signal <sAout>.
+    Found 12-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 12-bit register for signal <sSumout>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <ALEY_GenReg_5> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_6>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 10-bit register for signal <sAout>.
+    Found 10-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 14-bit register for signal <sSumout>.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+Unit <ALEY_GenReg_6> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_7>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 8-bit register for signal <sAout>.
+    Found 8-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 16-bit register for signal <sSumout>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <ALEY_GenReg_7> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_8>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 6-bit register for signal <sAout>.
+    Found 6-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 18-bit register for signal <sSumout>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+Unit <ALEY_GenReg_8> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_9>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 4-bit register for signal <sAout>.
+    Found 4-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 20-bit register for signal <sSumout>.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+Unit <ALEY_GenReg_9> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_10>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 2-bit register for signal <sAout>.
+    Found 2-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 22-bit register for signal <sSumout>.
+    Summary:
+	inferred  27 D-type flip-flop(s).
+Unit <ALEY_GenReg_10> synthesized.
+
+
+Synthesizing Unit <ALEY_LastReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 24-bit register for signal <sSumout>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <ALEY_LastReg> synthesized.
+
+
+Synthesizing Unit <ALEY_First_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <ALEY_First_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_GEN_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <ALEY_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_First_2B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_First_2B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_GEN_2B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_GEN_2B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_2B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_RCA_2B.vhd".
+Unit <ALEY_RCA_2B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 46
+ 1-bit register                                        : 12
+ 10-bit register                                       : 3
+ 12-bit register                                       : 3
+ 14-bit register                                       : 3
+ 16-bit register                                       : 3
+ 18-bit register                                       : 3
+ 2-bit register                                        : 3
+ 20-bit register                                       : 3
+ 22-bit register                                       : 3
+ 24-bit register                                       : 1
+ 4-bit register                                        : 3
+ 6-bit register                                        : 3
+ 8-bit register                                        : 3
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 432
+ Flip-Flops                                            : 432
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALEY_RCA_2B> ...
+
+Optimizing unit <ALEY_FirstReg> ...
+
+Optimizing unit <ALEY_GenReg_1> ...
+
+Optimizing unit <ALEY_GenReg_2> ...
+
+Optimizing unit <ALEY_GenReg_3> ...
+
+Optimizing unit <ALEY_GenReg_4> ...
+
+Optimizing unit <ALEY_GenReg_5> ...
+
+Optimizing unit <ALEY_GenReg_6> ...
+
+Optimizing unit <ALEY_GenReg_7> ...
+
+Optimizing unit <ALEY_GenReg_8> ...
+
+Optimizing unit <ALEY_GenReg_9> ...
+
+Optimizing unit <ALEY_GenReg_10> ...
+
+Optimizing unit <ALEY_LastReg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALEY_RCA_2B, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <ALEY_RCA_2B> :
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_1>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_0>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_1>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_0>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_1>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_0>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_1>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_0>.
+	Found 6-bit shift register for signal <InstALEY_RCA_GEN_REG6/sAout_1>.
+	Found 6-bit shift register for signal <InstALEY_RCA_GEN_REG6/sAout_0>.
+	Found 6-bit shift register for signal <InstALEY_RCA_GEN_REG6/sBout_1>.
+	Found 6-bit shift register for signal <InstALEY_RCA_GEN_REG6/sBout_0>.
+	Found 7-bit shift register for signal <InstALEY_RCA_GEN_REG7/sAout_1>.
+	Found 7-bit shift register for signal <InstALEY_RCA_GEN_REG7/sAout_0>.
+	Found 7-bit shift register for signal <InstALEY_RCA_GEN_REG7/sBout_1>.
+	Found 7-bit shift register for signal <InstALEY_RCA_GEN_REG7/sBout_0>.
+	Found 8-bit shift register for signal <InstALEY_RCA_GEN_REG8/sAout_1>.
+	Found 8-bit shift register for signal <InstALEY_RCA_GEN_REG8/sAout_0>.
+	Found 8-bit shift register for signal <InstALEY_RCA_GEN_REG8/sBout_1>.
+	Found 8-bit shift register for signal <InstALEY_RCA_GEN_REG8/sBout_0>.
+	Found 9-bit shift register for signal <InstALEY_RCA_GEN_REG9/sAout_1>.
+	Found 9-bit shift register for signal <InstALEY_RCA_GEN_REG9/sAout_0>.
+	Found 9-bit shift register for signal <InstALEY_RCA_GEN_REG9/sBout_1>.
+	Found 9-bit shift register for signal <InstALEY_RCA_GEN_REG9/sBout_0>.
+	Found 10-bit shift register for signal <InstALEY_RCA_GEN_REG10/sAout_1>.
+	Found 10-bit shift register for signal <InstALEY_RCA_GEN_REG10/sAout_0>.
+	Found 10-bit shift register for signal <InstALEY_RCA_GEN_REG10/sBout_1>.
+	Found 10-bit shift register for signal <InstALEY_RCA_GEN_REG10/sBout_0>.
+	Found 11-bit shift register for signal <InstALEY_RCA_GEN_REG11/sAout_1>.
+	Found 11-bit shift register for signal <InstALEY_RCA_GEN_REG11/sAout_0>.
+	Found 11-bit shift register for signal <InstALEY_RCA_GEN_REG11/sBout_1>.
+	Found 11-bit shift register for signal <InstALEY_RCA_GEN_REG11/sBout_0>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_15>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_14>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_13>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_12>.
+	Found 6-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_11>.
+	Found 6-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_10>.
+	Found 7-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_9>.
+	Found 7-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_8>.
+	Found 8-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_7>.
+	Found 8-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_6>.
+	Found 9-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_5>.
+	Found 9-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_4>.
+	Found 10-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_3>.
+	Found 10-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_2>.
+	Found 11-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_1>.
+	Found 11-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_0>.
+Unit <ALEY_RCA_2B> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+# Shift Registers                                      : 48
+ 10-bit shift register                                 : 6
+ 11-bit shift register                                 : 6
+ 4-bit shift register                                  : 6
+ 5-bit shift register                                  : 6
+ 6-bit shift register                                  : 6
+ 7-bit shift register                                  : 6
+ 8-bit shift register                                  : 6
+ 9-bit shift register                                  : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALEY_RCA_2B.ngr
+Top Level Output File Name         : ALEY_RCA_2B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 97
+#      GND                         : 1
+#      LUT2                        : 49
+#      LUT3                        : 33
+#      LUT3_D                      : 11
+#      LUT4                        : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 178
+#      FDE                         : 48
+#      FDRE                        : 130
+# Shift Registers                  : 48
+#      SRL16E                      : 48
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vlx100ff1148-12 
+
+ Number of Slices:                      107  out of  49152     0%  
+ Number of Slice Flip Flops:            178  out of  98304     0%  
+ Number of 4 input LUTs:                143  out of  98304     0%  
+    Number used as logic:                95
+    Number used as Shift registers:      48
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    768     9%  
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 226   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 1.819ns (Maximum Frequency: 549.753MHz)
+   Minimum input arrival time before clock: 2.844ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.819ns (frequency: 549.753MHz)
+  Total number of paths / destination ports: 336 / 178
+-------------------------------------------------------------------------
+Delay:               1.819ns (Levels of Logic = 0)
+  Source:            InstALEY_RCA_GEN_REG4/Mshreg_sBout_1 (FF)
+  Destination:       InstALEY_RCA_GEN_REG4/sBout_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstALEY_RCA_GEN_REG4/Mshreg_sBout_1 to InstALEY_RCA_GEN_REG4/sBout_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   1.802   0.000  InstALEY_RCA_GEN_REG4/Mshreg_sBout_1 (InstALEY_RCA_GEN_REG4/Mshreg_sBout_1)
+     FDE:D                     0.017          InstALEY_RCA_GEN_REG4/sBout_11
+    ----------------------------------------
+    Total                      1.819ns (1.819ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 410 / 403
+-------------------------------------------------------------------------
+Offset:              2.844ns (Levels of Logic = 1)
+  Source:            en (PAD)
+  Destination:       InstALEY_RCA_GEN_REG4/Mshreg_sBout_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to InstALEY_RCA_GEN_REG4/Mshreg_sBout_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           226   0.754   1.246  en_IBUF (en_IBUF)
+     SRL16E:CE                 0.844          InstALEY_RCA_GEN_REG4/Mshreg_sBout_1
+    ----------------------------------------
+    Total                      2.844ns (1.598ns logic, 1.246ns route)
+                                       (56.2% logic, 43.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstALEY_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstALEY_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstALEY_RCA_Last_REG1/scarryout (InstALEY_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 12.49 secs
+ 
+--> 
+
+
+Total memory usage is 542704 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------4B--------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: ALEY_RCA_4B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALEY_RCA_4B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALEY_RCA_4B"
+Output Format                      : NGC
+Target Device                      : xc4vlx100-12-ff1148
+
+---- Source Options
+Top Module Name                    : ALEY_RCA_4B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 48
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" is newer than current system time.
+Entity <ALEY_first_bslice> compiled.
+Entity <ALEY_first_bslice> (Architecture <beh_first_bs>) compiled.
+Entity <ALEY_gen_bslice> compiled.
+Entity <ALEY_gen_bslice> (Architecture <beh_bs>) compiled.
+Entity <ALEY_lastreg> compiled.
+Entity <ALEY_lastreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_firstreg> compiled.
+Entity <ALEY_firstreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_genreg> compiled.
+Entity <ALEY_genreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_rca_first_2b> compiled.
+Entity <ALEY_rca_first_2b> (Architecture <beh_first_2b>) compiled.
+Entity <ALEY_rca_gen_2b> compiled.
+Entity <ALEY_rca_gen_2b> (Architecture <beh_gen_2b>) compiled.
+Entity <ALEY_rca_first_4b> compiled.
+Entity <ALEY_rca_first_4b> (Architecture <beh_first_4b>) compiled.
+Entity <ALEY_rca_gen_4b> compiled.
+Entity <ALEY_rca_gen_4b> (Architecture <beh_gen_4b>) compiled.
+Entity <ALEY_rca_first_6b> compiled.
+Entity <ALEY_rca_first_6b> (Architecture <beh_first_6b>) compiled.
+Entity <ALEY_rca_gen_6b> compiled.
+Entity <ALEY_rca_gen_6b> (Architecture <beh_gen_6b>) compiled.
+Entity <ALEY_rca_first_8b> compiled.
+Entity <ALEY_rca_first_8b> (Architecture <beh_first_8b>) compiled.
+Entity <ALEY_rca_gen_8b> compiled.
+Entity <ALEY_rca_gen_8b> (Architecture <beh_gen_8b>) compiled.
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" is newer than current system time.
+Entity <ALEY_RCA_4B> compiled.
+Entity <ALEY_RCA_4B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALEY_RCA_4B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 4
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" line 46: Null range in type of signal <RAout6>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" line 53: Null range in type of signal <RBout6>.
+
+Analyzing hierarchy for entity <ALEY_RCA_First_4B> in library <work> (architecture <beh_first_4b>) with generics.
+	BITS4 = 4
+
+Analyzing hierarchy for entity <ALEY_FirstReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	w = 20
+
+Analyzing hierarchy for entity <ALEY_RCA_GEN_4B> in library <work> (architecture <beh_gen_4b>) with generics.
+	BITS4 = 4
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	prevbbits = 4
+	sumsize = 8
+	w = 16
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	prevbbits = 8
+	sumsize = 12
+	w = 12
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	prevbbits = 12
+	sumsize = 16
+	w = 8
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	prevbbits = 16
+	sumsize = 20
+	w = 4
+
+Analyzing hierarchy for entity <ALEY_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 4
+	prevbbits = 20
+	sumsize = 24
+
+Analyzing hierarchy for entity <ALEY_First_BSlice> in library <work> (architecture <beh_first_bs>).
+
+Analyzing hierarchy for entity <ALEY_GEN_BSlice> in library <work> (architecture <beh_bs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ALEY_RCA_4B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 4
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" line 46: Null range in type of signal <RAout6>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd" line 53: Null range in type of signal <RBout6>.
+Entity <ALEY_RCA_4B> analyzed. Unit <ALEY_RCA_4B> generated.
+
+Analyzing generic Entity <ALEY_RCA_First_4B> in library <work> (Architecture <beh_first_4b>).
+	BITS4 = 4
+Entity <ALEY_RCA_First_4B> analyzed. Unit <ALEY_RCA_First_4B> generated.
+
+Analyzing Entity <ALEY_First_BSlice> in library <work> (Architecture <beh_first_bs>).
+Entity <ALEY_First_BSlice> analyzed. Unit <ALEY_First_BSlice> generated.
+
+Analyzing Entity <ALEY_GEN_BSlice> in library <work> (Architecture <beh_bs>).
+Entity <ALEY_GEN_BSlice> analyzed. Unit <ALEY_GEN_BSlice> generated.
+
+Analyzing generic Entity <ALEY_FirstReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	w = 20
+Entity <ALEY_FirstReg> analyzed. Unit <ALEY_FirstReg> generated.
+
+Analyzing generic Entity <ALEY_RCA_GEN_4B> in library <work> (Architecture <beh_gen_4b>).
+	BITS4 = 4
+Entity <ALEY_RCA_GEN_4B> analyzed. Unit <ALEY_RCA_GEN_4B> generated.
+
+Analyzing generic Entity <ALEY_GenReg.1> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	prevbbits = 4
+	sumsize = 8
+	w = 16
+Entity <ALEY_GenReg.1> analyzed. Unit <ALEY_GenReg.1> generated.
+
+Analyzing generic Entity <ALEY_GenReg.2> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	prevbbits = 8
+	sumsize = 12
+	w = 12
+Entity <ALEY_GenReg.2> analyzed. Unit <ALEY_GenReg.2> generated.
+
+Analyzing generic Entity <ALEY_GenReg.3> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	prevbbits = 12
+	sumsize = 16
+	w = 8
+Entity <ALEY_GenReg.3> analyzed. Unit <ALEY_GenReg.3> generated.
+
+Analyzing generic Entity <ALEY_GenReg.4> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	prevbbits = 16
+	sumsize = 20
+	w = 4
+Entity <ALEY_GenReg.4> analyzed. Unit <ALEY_GenReg.4> generated.
+
+Analyzing generic Entity <ALEY_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 4
+	prevbbits = 20
+	sumsize = 24
+Entity <ALEY_LastReg> analyzed. Unit <ALEY_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALEY_FirstReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 20-bit register for signal <sAout>.
+    Found 20-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 4-bit register for signal <sSumout>.
+    Summary:
+	inferred  45 D-type flip-flop(s).
+Unit <ALEY_FirstReg> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_1>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 16-bit register for signal <sAout>.
+    Found 16-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred  41 D-type flip-flop(s).
+Unit <ALEY_GenReg_1> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_2>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 12-bit register for signal <sAout>.
+    Found 12-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 12-bit register for signal <sSumout>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <ALEY_GenReg_2> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_3>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 8-bit register for signal <sAout>.
+    Found 8-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 16-bit register for signal <sSumout>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <ALEY_GenReg_3> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_4>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 4-bit register for signal <sAout>.
+    Found 4-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 20-bit register for signal <sSumout>.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+Unit <ALEY_GenReg_4> synthesized.
+
+
+Synthesizing Unit <ALEY_LastReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 24-bit register for signal <sSumout>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <ALEY_LastReg> synthesized.
+
+
+Synthesizing Unit <ALEY_First_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <ALEY_First_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_GEN_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <ALEY_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_First_4B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_First_4B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_GEN_4B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_GEN_4B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_4B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_RCA_4B.vhd".
+Unit <ALEY_RCA_4B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 22
+ 1-bit register                                        : 6
+ 12-bit register                                       : 3
+ 16-bit register                                       : 3
+ 20-bit register                                       : 3
+ 24-bit register                                       : 1
+ 4-bit register                                        : 3
+ 8-bit register                                        : 3
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 210
+ Flip-Flops                                            : 210
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALEY_RCA_4B> ...
+
+Optimizing unit <ALEY_FirstReg> ...
+
+Optimizing unit <ALEY_GenReg_1> ...
+
+Optimizing unit <ALEY_GenReg_2> ...
+
+Optimizing unit <ALEY_GenReg_3> ...
+
+Optimizing unit <ALEY_GenReg_4> ...
+
+Optimizing unit <ALEY_LastReg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALEY_RCA_4B, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <ALEY_RCA_4B> :
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_3>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_2>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_1>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sAout_0>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_3>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_2>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_1>.
+	Found 4-bit shift register for signal <InstALEY_RCA_GEN_REG4/sBout_0>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_3>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_2>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_1>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sAout_0>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_3>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_2>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_1>.
+	Found 5-bit shift register for signal <InstALEY_RCA_GEN_REG5/sBout_0>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_7>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_6>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_5>.
+	Found 4-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_4>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_3>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_2>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_1>.
+	Found 5-bit shift register for signal <InstALEY_RCA_Last_REG1/sSumout_0>.
+Unit <ALEY_RCA_4B> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 102
+ Flip-Flops                                            : 102
+# Shift Registers                                      : 24
+ 4-bit shift register                                  : 12
+ 5-bit shift register                                  : 12
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALEY_RCA_4B.ngr
+Top Level Output File Name         : ALEY_RCA_4B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 98
+#      GND                         : 1
+#      LUT2                        : 30
+#      LUT2_L                      : 5
+#      LUT3                        : 24
+#      LUT3_D                      : 5
+#      LUT4                        : 22
+#      LUT4_L                      : 10
+#      VCC                         : 1
+# FlipFlops/Latches                : 154
+#      FDE                         : 24
+#      FDRE                        : 130
+# Shift Registers                  : 24
+#      SRL16E                      : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vlx100ff1148-12 
+
+ Number of Slices:                      100  out of  49152     0%  
+ Number of Slice Flip Flops:            154  out of  98304     0%  
+ Number of 4 input LUTs:                120  out of  98304     0%  
+    Number used as logic:                96
+    Number used as Shift registers:      24
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    768     9%  
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 178   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 1.819ns (Maximum Frequency: 549.753MHz)
+   Minimum input arrival time before clock: 2.706ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.819ns (frequency: 549.753MHz)
+  Total number of paths / destination ports: 336 / 132
+-------------------------------------------------------------------------
+Delay:               1.819ns (Levels of Logic = 0)
+  Source:            InstALEY_RCA_GEN_REG4/Mshreg_sAout_1 (FF)
+  Destination:       InstALEY_RCA_GEN_REG4/sAout_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstALEY_RCA_GEN_REG4/Mshreg_sAout_1 to InstALEY_RCA_GEN_REG4/sAout_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   1.802   0.000  InstALEY_RCA_GEN_REG4/Mshreg_sAout_1 (InstALEY_RCA_GEN_REG4/Mshreg_sAout_1)
+     FDE:D                     0.017          InstALEY_RCA_GEN_REG4/sAout_11
+    ----------------------------------------
+    Total                      1.819ns (1.819ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 376 / 353
+-------------------------------------------------------------------------
+Offset:              2.706ns (Levels of Logic = 4)
+  Source:            Op_A<1> (PAD)
+  Destination:       InstALEY_RCA_GEN_REG1/sSumout_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Op_A<1> to InstALEY_RCA_GEN_REG1/sSumout_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.754   0.567  Op_A_1_IBUF (Op_A_1_IBUF)
+     LUT4:I0->O            2   0.147   0.401  InstALEY_RCA_First_4B/InstALEY_GEN_BSlice1/Carry_Q1 (InstALEY_RCA_First_4B/c2)
+     LUT3:I2->O            2   0.147   0.527  InstALEY_RCA_First_4B/InstALEY_GEN_BSlice2/Carry_Q1 (InstALEY_RCA_First_4B/c3)
+     LUT3:I0->O            1   0.147   0.000  InstALEY_RCA_First_4B/InstALEY_GEN_BSlice3/Mxor_SUM_Q_Result1 (s1<3>)
+     FDRE:D                    0.017          InstALEY_RCA_GEN_REG1/sSumout_3
+    ----------------------------------------
+    Total                      2.706ns (1.212ns logic, 1.494ns route)
+                                       (44.8% logic, 55.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstALEY_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstALEY_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstALEY_RCA_Last_REG1/scarryout (InstALEY_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.08 secs
+ 
+--> 
+
+
+Total memory usage is 538904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------6B--------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: ALEY_RCA_6B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALEY_RCA_6B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALEY_RCA_6B"
+Output Format                      : NGC
+Target Device                      : xc4vlx100-12-ff1148
+
+---- Source Options
+Top Module Name                    : ALEY_RCA_6B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 48
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" is newer than current system time.
+Entity <ALEY_first_bslice> compiled.
+Entity <ALEY_first_bslice> (Architecture <beh_first_bs>) compiled.
+Entity <ALEY_gen_bslice> compiled.
+Entity <ALEY_gen_bslice> (Architecture <beh_bs>) compiled.
+Entity <ALEY_lastreg> compiled.
+Entity <ALEY_lastreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_firstreg> compiled.
+Entity <ALEY_firstreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_genreg> compiled.
+Entity <ALEY_genreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_rca_first_2b> compiled.
+Entity <ALEY_rca_first_2b> (Architecture <beh_first_2b>) compiled.
+Entity <ALEY_rca_gen_2b> compiled.
+Entity <ALEY_rca_gen_2b> (Architecture <beh_gen_2b>) compiled.
+Entity <ALEY_rca_first_4b> compiled.
+Entity <ALEY_rca_first_4b> (Architecture <beh_first_4b>) compiled.
+Entity <ALEY_rca_gen_4b> compiled.
+Entity <ALEY_rca_gen_4b> (Architecture <beh_gen_4b>) compiled.
+Entity <ALEY_rca_first_6b> compiled.
+Entity <ALEY_rca_first_6b> (Architecture <beh_first_6b>) compiled.
+Entity <ALEY_rca_gen_6b> compiled.
+Entity <ALEY_rca_gen_6b> (Architecture <beh_gen_6b>) compiled.
+Entity <ALEY_rca_first_8b> compiled.
+Entity <ALEY_rca_first_8b> (Architecture <beh_first_8b>) compiled.
+Entity <ALEY_rca_gen_8b> compiled.
+Entity <ALEY_rca_gen_8b> (Architecture <beh_gen_8b>) compiled.
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" is newer than current system time.
+Entity <ALEY_RCA_6B> compiled.
+Entity <ALEY_RCA_6B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALEY_RCA_6B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 6
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" line 39: Null range in type of signal <RAout4>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" line 44: Null range in type of signal <RBout4>.
+
+Analyzing hierarchy for entity <ALEY_RCA_First_6B> in library <work> (architecture <beh_first_6b>) with generics.
+	BITS6 = 6
+
+Analyzing hierarchy for entity <ALEY_FirstReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 6
+	w = 18
+
+Analyzing hierarchy for entity <ALEY_RCA_GEN_6B> in library <work> (architecture <beh_gen_6b>) with generics.
+	BITS6 = 6
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 6
+	prevbbits = 6
+	sumsize = 12
+	w = 12
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 6
+	prevbbits = 12
+	sumsize = 18
+	w = 6
+
+Analyzing hierarchy for entity <ALEY_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 6
+	prevbbits = 18
+	sumsize = 24
+
+Analyzing hierarchy for entity <ALEY_First_BSlice> in library <work> (architecture <beh_first_bs>).
+
+Analyzing hierarchy for entity <ALEY_GEN_BSlice> in library <work> (architecture <beh_bs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ALEY_RCA_6B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 6
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" line 39: Null range in type of signal <RAout4>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd" line 44: Null range in type of signal <RBout4>.
+Entity <ALEY_RCA_6B> analyzed. Unit <ALEY_RCA_6B> generated.
+
+Analyzing generic Entity <ALEY_RCA_First_6B> in library <work> (Architecture <beh_first_6b>).
+	BITS6 = 6
+Entity <ALEY_RCA_First_6B> analyzed. Unit <ALEY_RCA_First_6B> generated.
+
+Analyzing Entity <ALEY_First_BSlice> in library <work> (Architecture <beh_first_bs>).
+Entity <ALEY_First_BSlice> analyzed. Unit <ALEY_First_BSlice> generated.
+
+Analyzing Entity <ALEY_GEN_BSlice> in library <work> (Architecture <beh_bs>).
+Entity <ALEY_GEN_BSlice> analyzed. Unit <ALEY_GEN_BSlice> generated.
+
+Analyzing generic Entity <ALEY_FirstReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 6
+	w = 18
+Entity <ALEY_FirstReg> analyzed. Unit <ALEY_FirstReg> generated.
+
+Analyzing generic Entity <ALEY_RCA_GEN_6B> in library <work> (Architecture <beh_gen_6b>).
+	BITS6 = 6
+Entity <ALEY_RCA_GEN_6B> analyzed. Unit <ALEY_RCA_GEN_6B> generated.
+
+Analyzing generic Entity <ALEY_GenReg.1> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 6
+	prevbbits = 6
+	sumsize = 12
+	w = 12
+Entity <ALEY_GenReg.1> analyzed. Unit <ALEY_GenReg.1> generated.
+
+Analyzing generic Entity <ALEY_GenReg.2> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 6
+	prevbbits = 12
+	sumsize = 18
+	w = 6
+Entity <ALEY_GenReg.2> analyzed. Unit <ALEY_GenReg.2> generated.
+
+Analyzing generic Entity <ALEY_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 6
+	prevbbits = 18
+	sumsize = 24
+Entity <ALEY_LastReg> analyzed. Unit <ALEY_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALEY_FirstReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 18-bit register for signal <sAout>.
+    Found 18-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 6-bit register for signal <sSumout>.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+Unit <ALEY_FirstReg> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_1>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 12-bit register for signal <sAout>.
+    Found 12-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 12-bit register for signal <sSumout>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <ALEY_GenReg_1> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg_2>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 6-bit register for signal <sAout>.
+    Found 6-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 18-bit register for signal <sSumout>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+Unit <ALEY_GenReg_2> synthesized.
+
+
+Synthesizing Unit <ALEY_LastReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 24-bit register for signal <sSumout>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <ALEY_LastReg> synthesized.
+
+
+Synthesizing Unit <ALEY_First_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <ALEY_First_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_GEN_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <ALEY_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_First_6B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_First_6B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_GEN_6B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_GEN_6B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_6B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_RCA_6B.vhd".
+Unit <ALEY_RCA_6B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 14
+ 1-bit register                                        : 4
+ 12-bit register                                       : 3
+ 18-bit register                                       : 3
+ 24-bit register                                       : 1
+ 6-bit register                                        : 3
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALEY_RCA_6B> ...
+
+Optimizing unit <ALEY_FirstReg> ...
+
+Optimizing unit <ALEY_GenReg_1> ...
+
+Optimizing unit <ALEY_GenReg_2> ...
+
+Optimizing unit <ALEY_LastReg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALEY_RCA_6B, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALEY_RCA_6B.ngr
+Top Level Output File Name         : ALEY_RCA_6B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 80
+#      LUT2                        : 10
+#      LUT2_L                      : 3
+#      LUT3                        : 23
+#      LUT3_D                      : 3
+#      LUT4                        : 29
+#      LUT4_D                      : 3
+#      LUT4_L                      : 3
+#      MUXF5                       : 6
+# FlipFlops/Latches                : 136
+#      FDRE                        : 136
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vlx100ff1148-12 
+
+ Number of Slices:                       87  out of  49152     0%  
+ Number of Slice Flip Flops:            136  out of  98304     0%  
+ Number of 4 input LUTs:                 74  out of  98304     0%  
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    768     9%  
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 136   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 2.006ns (Maximum Frequency: 498.529MHz)
+   Minimum input arrival time before clock: 3.802ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.006ns (frequency: 498.529MHz)
+  Total number of paths / destination ports: 351 / 93
+-------------------------------------------------------------------------
+Delay:               2.006ns (Levels of Logic = 3)
+  Source:            InstALEY_RCA_GEN_REG1/sBout_3 (FF)
+  Destination:       InstALEY_RCA_GEN_REG2/sSumout_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstALEY_RCA_GEN_REG1/sBout_3 to InstALEY_RCA_GEN_REG2/sSumout_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.272   0.565  InstALEY_RCA_GEN_REG1/sBout_3 (InstALEY_RCA_GEN_REG1/sBout_3)
+     LUT4_D:I0->O          2   0.147   0.567  InstALEY_RCA_GEN_6B1/InstALEY_GEN_BSlice3/Carry_Q1_SW0 (N44)
+     LUT4:I0->O            1   0.147   0.000  InstALEY_RCA_GEN_6B1/InstALEY_GEN_BSlice6/Mxor_SUM_Q_Result1_F (N98)
+     MUXF5:I0->O           1   0.291   0.000  InstALEY_RCA_GEN_6B1/InstALEY_GEN_BSlice6/Mxor_SUM_Q_Result1 (s2<5>)
+     FDRE:D                    0.017          InstALEY_RCA_GEN_REG2/sSumout_11
+    ----------------------------------------
+    Total                      2.006ns (0.874ns logic, 1.132ns route)
+                                       (43.6% logic, 56.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 362 / 315
+-------------------------------------------------------------------------
+Offset:              3.802ns (Levels of Logic = 6)
+  Source:            Op_A<1> (PAD)
+  Destination:       InstALEY_RCA_GEN_REG1/sSumout_5 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Op_A<1> to InstALEY_RCA_GEN_REG1/sSumout_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.754   0.567  Op_A_1_IBUF (Op_A_1_IBUF)
+     LUT4:I0->O            2   0.147   0.401  InstALEY_RCA_First_6B/InstALEY_GEN_BSlice1/Carry_Q1 (InstALEY_RCA_First_6B/c2)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_6B/InstALEY_GEN_BSlice2/Carry_Q1 (InstALEY_RCA_First_6B/c3)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_6B/InstALEY_GEN_BSlice3/Carry_Q1 (InstALEY_RCA_First_6B/c4)
+     LUT3:I2->O            2   0.147   0.527  InstALEY_RCA_First_6B/InstALEY_GEN_BSlice4/Carry_Q1 (InstALEY_RCA_First_6B/c5)
+     LUT3:I0->O            1   0.147   0.000  InstALEY_RCA_First_6B/InstALEY_GEN_BSlice5/Mxor_SUM_Q_Result1 (s1<5>)
+     FDRE:D                    0.017          InstALEY_RCA_GEN_REG1/sSumout_5
+    ----------------------------------------
+    Total                      3.802ns (1.506ns logic, 2.296ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstALEY_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstALEY_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstALEY_RCA_Last_REG1/scarryout (InstALEY_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 11.66 secs
+ 
+--> 
+
+
+Total memory usage is 537136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------8B--------------------------------------------------------
+----------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> 
+Reading design: ALEY_RCA_8B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALEY_RCA_8B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALEY_RCA_8B"
+Output Format                      : NGC
+Target Device                      : xc4vlx100-12-ff1148
+
+---- Source Options
+Top Module Name                    : ALEY_RCA_8B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 48
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd" is newer than current system time.
+Entity <ALEY_first_bslice> compiled.
+Entity <ALEY_first_bslice> (Architecture <beh_first_bs>) compiled.
+Entity <ALEY_gen_bslice> compiled.
+Entity <ALEY_gen_bslice> (Architecture <beh_bs>) compiled.
+Entity <ALEY_lastreg> compiled.
+Entity <ALEY_lastreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_firstreg> compiled.
+Entity <ALEY_firstreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_genreg> compiled.
+Entity <ALEY_genreg> (Architecture <reg16bit_arch>) compiled.
+Entity <ALEY_rca_first_2b> compiled.
+Entity <ALEY_rca_first_2b> (Architecture <beh_first_2b>) compiled.
+Entity <ALEY_rca_gen_2b> compiled.
+Entity <ALEY_rca_gen_2b> (Architecture <beh_gen_2b>) compiled.
+Entity <ALEY_rca_first_4b> compiled.
+Entity <ALEY_rca_first_4b> (Architecture <beh_first_4b>) compiled.
+Entity <ALEY_rca_gen_4b> compiled.
+Entity <ALEY_rca_gen_4b> (Architecture <beh_gen_4b>) compiled.
+Entity <ALEY_rca_first_6b> compiled.
+Entity <ALEY_rca_first_6b> (Architecture <beh_first_6b>) compiled.
+Entity <ALEY_rca_gen_6b> compiled.
+Entity <ALEY_rca_gen_6b> (Architecture <beh_gen_6b>) compiled.
+Entity <ALEY_rca_first_8b> compiled.
+Entity <ALEY_rca_first_8b> (Architecture <beh_first_8b>) compiled.
+Entity <ALEY_rca_gen_8b> compiled.
+Entity <ALEY_rca_gen_8b> (Architecture <beh_gen_8b>) compiled.
+Compiling vhdl file "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" is newer than current system time.
+Entity <ALEY_RCA_8B> compiled.
+Entity <ALEY_RCA_8B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALEY_RCA_8B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 8
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" line 35: Null range in type of signal <RAout3>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" line 39: Null range in type of signal <RBout3>.
+
+Analyzing hierarchy for entity <ALEY_RCA_First_8B> in library <work> (architecture <beh_first_8b>) with generics.
+	BITS8 = 8
+
+Analyzing hierarchy for entity <ALEY_FirstReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+	w = 16
+
+Analyzing hierarchy for entity <ALEY_RCA_GEN_8B> in library <work> (architecture <beh_gen_8b>) with generics.
+	BITS8 = 8
+
+Analyzing hierarchy for entity <ALEY_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+	prevbbits = 8
+	sumsize = 16
+	w = 8
+
+Analyzing hierarchy for entity <ALEY_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+	prevbbits = 16
+	sumsize = 24
+
+Analyzing hierarchy for entity <ALEY_First_BSlice> in library <work> (architecture <beh_first_bs>).
+
+Analyzing hierarchy for entity <ALEY_GEN_BSlice> in library <work> (architecture <beh_bs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ALEY_RCA_8B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 8
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" line 35: Null range in type of signal <RAout3>.
+WARNING:Xst:1994 - "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd" line 39: Null range in type of signal <RBout3>.
+Entity <ALEY_RCA_8B> analyzed. Unit <ALEY_RCA_8B> generated.
+
+Analyzing generic Entity <ALEY_RCA_First_8B> in library <work> (Architecture <beh_first_8b>).
+	BITS8 = 8
+Entity <ALEY_RCA_First_8B> analyzed. Unit <ALEY_RCA_First_8B> generated.
+
+Analyzing Entity <ALEY_First_BSlice> in library <work> (Architecture <beh_first_bs>).
+Entity <ALEY_First_BSlice> analyzed. Unit <ALEY_First_BSlice> generated.
+
+Analyzing Entity <ALEY_GEN_BSlice> in library <work> (Architecture <beh_bs>).
+Entity <ALEY_GEN_BSlice> analyzed. Unit <ALEY_GEN_BSlice> generated.
+
+Analyzing generic Entity <ALEY_FirstReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+	w = 16
+Entity <ALEY_FirstReg> analyzed. Unit <ALEY_FirstReg> generated.
+
+Analyzing generic Entity <ALEY_RCA_GEN_8B> in library <work> (Architecture <beh_gen_8b>).
+	BITS8 = 8
+Entity <ALEY_RCA_GEN_8B> analyzed. Unit <ALEY_RCA_GEN_8B> generated.
+
+Analyzing generic Entity <ALEY_GenReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+	prevbbits = 8
+	sumsize = 16
+	w = 8
+Entity <ALEY_GenReg> analyzed. Unit <ALEY_GenReg> generated.
+
+Analyzing generic Entity <ALEY_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+	prevbbits = 16
+	sumsize = 24
+Entity <ALEY_LastReg> analyzed. Unit <ALEY_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALEY_FirstReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 16-bit register for signal <sAout>.
+    Found 16-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred  41 D-type flip-flop(s).
+Unit <ALEY_FirstReg> synthesized.
+
+
+Synthesizing Unit <ALEY_GenReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 8-bit register for signal <sAout>.
+    Found 8-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 16-bit register for signal <sSumout>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <ALEY_GenReg> synthesized.
+
+
+Synthesizing Unit <ALEY_LastReg>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 24-bit register for signal <sSumout>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <ALEY_LastReg> synthesized.
+
+
+Synthesizing Unit <ALEY_First_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <ALEY_First_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_GEN_BSlice>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <ALEY_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_First_8B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_First_8B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_GEN_8B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_COMPONENTS.vhd".
+Unit <ALEY_RCA_GEN_8B> synthesized.
+
+
+Synthesizing Unit <ALEY_RCA_8B>.
+    Related source file is "/home/ise/ALEY_HW5/ALEY_RCA_8B.vhd".
+Unit <ALEY_RCA_8B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 16-bit register                                       : 3
+ 24-bit register                                       : 1
+ 8-bit register                                        : 3
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 99
+ Flip-Flops                                            : 99
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALEY_RCA_8B> ...
+
+Optimizing unit <ALEY_FirstReg> ...
+
+Optimizing unit <ALEY_GenReg> ...
+
+Optimizing unit <ALEY_LastReg> ...
+
+Optimizing unit <ALEY_RCA_First_8B> ...
+
+Optimizing unit <ALEY_RCA_GEN_8B> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ALEY_RCA_8B, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 99
+ Flip-Flops                                            : 99
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALEY_RCA_8B.ngr
+Top Level Output File Name         : ALEY_RCA_8B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 77
+#      LUT2                        : 11
+#      LUT3                        : 30
+#      LUT3_D                      : 4
+#      LUT4                        : 22
+#      LUT4_D                      : 6
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 99
+#      FDRE                        : 99
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vlx100ff1148-12 
+
+ Number of Slices:                       67  out of  49152     0%  
+ Number of Slice Flip Flops:             99  out of  98304     0%  
+ Number of 4 input LUTs:                 73  out of  98304     0%  
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    768     9%  
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 99    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 2.329ns (Maximum Frequency: 429.350MHz)
+   Minimum input arrival time before clock: 4.898ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.329ns (frequency: 429.350MHz)
+  Total number of paths / destination ports: 354 / 58
+-------------------------------------------------------------------------
+Delay:               2.329ns (Levels of Logic = 4)
+  Source:            InstALEY_RCA_GEN_REG1/sBout_0 (FF)
+  Destination:       InstALEY_RCA_GEN_REG2/scarryout (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstALEY_RCA_GEN_REG1/sBout_0 to InstALEY_RCA_GEN_REG2/scarryout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.272   0.527  InstALEY_RCA_GEN_REG1/sBout_0 (InstALEY_RCA_GEN_REG1/sBout_0)
+     LUT3_D:I0->LO         1   0.147   0.122  InstALEY_RCA_GEN_8B1/c871 (N74)
+     LUT3:I2->O            6   0.147   0.415  InstALEY_RCA_GEN_8B1/c861 (InstALEY_RCA_GEN_8B1/c8_bdd10)
+     LUT3_D:I2->O          1   0.147   0.388  InstALEY_RCA_GEN_8B1/c841 (InstALEY_RCA_GEN_8B1/c8_bdd6)
+     LUT3:I2->O            1   0.147   0.000  InstALEY_RCA_GEN_8B1/c81 (c2)
+     FDRE:D                    0.017          InstALEY_RCA_GEN_REG2/scarryout
+    ----------------------------------------
+    Total                      2.329ns (0.877ns logic, 1.452ns route)
+                                       (37.7% logic, 62.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 318 / 239
+-------------------------------------------------------------------------
+Offset:              4.898ns (Levels of Logic = 8)
+  Source:            Op_A<1> (PAD)
+  Destination:       InstALEY_RCA_GEN_REG1/sSumout_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Op_A<1> to InstALEY_RCA_GEN_REG1/sSumout_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.754   0.567  Op_A_1_IBUF (Op_A_1_IBUF)
+     LUT4:I0->O            2   0.147   0.401  InstALEY_RCA_First_8B/c861 (InstALEY_RCA_First_8B/c8_bdd10)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_8B/c851 (InstALEY_RCA_First_8B/c8_bdd8)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_8B/c841 (InstALEY_RCA_First_8B/c8_bdd6)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_8B/c831 (InstALEY_RCA_First_8B/c8_bdd4)
+     LUT3:I2->O            2   0.147   0.401  InstALEY_RCA_First_8B/c821 (InstALEY_RCA_First_8B/c8_bdd2)
+     LUT3:I2->O            2   0.147   0.527  InstALEY_RCA_First_8B/c811 (InstALEY_RCA_First_8B/c8_bdd0)
+     LUT3:I0->O            1   0.147   0.000  InstALEY_RCA_First_8B/s81 (s1<7>)
+     FDRE:D                    0.017          InstALEY_RCA_GEN_REG1/sSumout_7
+    ----------------------------------------
+    Total                      4.898ns (1.800ns logic, 3.098ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstALEY_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstALEY_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstALEY_RCA_Last_REG1/scarryout (InstALEY_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.29 secs
+ 
+--> 
+
+
+Total memory usage is 536272 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)

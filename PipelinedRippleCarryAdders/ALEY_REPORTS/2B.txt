@@ -1,0 +1,753 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> 
+Reading design: BRYANT_RCA_2B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BRYANT_RCA_2B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BRYANT_RCA_2B"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : BRYANT_RCA_2B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd" in Library work.
+Entity <BRYANT_First_BSlice> compiled.
+Entity <BRYANT_First_BSlice> (Architecture <BEH_first_BS>) compiled.
+Entity <BRYANT_GEN_BSlice> compiled.
+Entity <BRYANT_GEN_BSlice> (Architecture <BEH_BS>) compiled.
+Entity <BRYANT_FirstReg> compiled.
+Entity <BRYANT_FirstReg> (Architecture <reg16bit_arch>) compiled.
+Entity <BRYANT_LastReg> compiled.
+Entity <BRYANT_LastReg> (Architecture <reg16bit_arch>) compiled.
+Entity <BRYANT_genreg> compiled.
+Entity <BRYANT_genreg> (Architecture <reg16bit_arch>) compiled.
+Entity <BRYANT_SUMReg> compiled.
+Entity <BRYANT_SUMReg> (Architecture <reg16bit_arch>) compiled.
+Entity <BRYANT_RCA_First_2B> compiled.
+Entity <BRYANT_RCA_First_2B> (Architecture <beh_first_2B>) compiled.
+Entity <BRYANT_RCA_GEN_2B> compiled.
+Entity <BRYANT_RCA_GEN_2B> (Architecture <beh_gen_2B>) compiled.
+Entity <BRYANT_RCA_First_4B> compiled.
+Entity <BRYANT_RCA_First_4B> (Architecture <beh_first_4B>) compiled.
+Entity <BRYANT_RCA_GEN_4B> compiled.
+Entity <BRYANT_RCA_GEN_4B> (Architecture <beh_gen_4B>) compiled.
+Entity <BRYANT_RCA_First_6B> compiled.
+Entity <BRYANT_RCA_First_6B> (Architecture <beh_first_6B>) compiled.
+Entity <BRYANT_RCA_GEN_6B> compiled.
+Entity <BRYANT_RCA_GEN_6B> (Architecture <beh_gen_6B>) compiled.
+Entity <BRYANT_RCA_First_8B> compiled.
+Entity <BRYANT_RCA_First_8B> (Architecture <beh_first_8B>) compiled.
+Entity <BRYANT_RCA_GEN_8B> compiled.
+Entity <BRYANT_RCA_GEN_8B> (Architecture <beh_gen_8B>) compiled.
+Compiling vhdl file "/home/ise/virtualboxtesting/BRYANT_RCA_2B.vhd" in Library work.
+Entity <BRYANT_RCA_2B> compiled.
+Entity <BRYANT_RCA_2B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BRYANT_RCA_2B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 2
+Analyzing hierarchy for entity <BRYANT_RCA_First_2B> in library <work> (architecture <beh_first_2B>) with generics.
+	BITS2 = 2
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 22
+
+Analyzing hierarchy for entity <BRYANT_RCA_GEN_2B> in library <work> (architecture <beh_gen_2B>) with generics.
+	BITS2 = 2
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 20
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 18
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 16
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 14
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 12
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 10
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 8
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 6
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 4
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+	w = 2
+
+Analyzing hierarchy for entity <BRYANT_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 2
+
+Analyzing hierarchy for entity <BRYANT_First_BSlice> in library <work> (architecture <BEH_first_BS>).
+
+Analyzing hierarchy for entity <BRYANT_GEN_BSlice> in library <work> (architecture <BEH_BS>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <BRYANT_RCA_2B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 2
+Entity <BRYANT_RCA_2B> analyzed. Unit <BRYANT_RCA_2B> generated.
+
+Analyzing generic Entity <BRYANT_RCA_First_2B> in library <work> (Architecture <beh_first_2B>).
+	BITS2 = 2
+Entity <BRYANT_RCA_First_2B> analyzed. Unit <BRYANT_RCA_First_2B> generated.
+
+Analyzing Entity <BRYANT_First_BSlice> in library <work> (Architecture <BEH_first_BS>).
+Entity <BRYANT_First_BSlice> analyzed. Unit <BRYANT_First_BSlice> generated.
+
+Analyzing Entity <BRYANT_GEN_BSlice> in library <work> (Architecture <BEH_BS>).
+Entity <BRYANT_GEN_BSlice> analyzed. Unit <BRYANT_GEN_BSlice> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.1> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 22
+Entity <BRYANT_GenReg.1> analyzed. Unit <BRYANT_GenReg.1> generated.
+
+Analyzing generic Entity <BRYANT_RCA_GEN_2B> in library <work> (Architecture <beh_gen_2B>).
+	BITS2 = 2
+Entity <BRYANT_RCA_GEN_2B> analyzed. Unit <BRYANT_RCA_GEN_2B> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.2> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 20
+Entity <BRYANT_GenReg.2> analyzed. Unit <BRYANT_GenReg.2> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.3> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 18
+Entity <BRYANT_GenReg.3> analyzed. Unit <BRYANT_GenReg.3> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.4> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 16
+Entity <BRYANT_GenReg.4> analyzed. Unit <BRYANT_GenReg.4> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.5> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 14
+Entity <BRYANT_GenReg.5> analyzed. Unit <BRYANT_GenReg.5> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.6> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 12
+Entity <BRYANT_GenReg.6> analyzed. Unit <BRYANT_GenReg.6> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.7> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 10
+Entity <BRYANT_GenReg.7> analyzed. Unit <BRYANT_GenReg.7> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.8> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 8
+Entity <BRYANT_GenReg.8> analyzed. Unit <BRYANT_GenReg.8> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.9> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 6
+Entity <BRYANT_GenReg.9> analyzed. Unit <BRYANT_GenReg.9> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.10> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 4
+Entity <BRYANT_GenReg.10> analyzed. Unit <BRYANT_GenReg.10> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.11> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+	w = 2
+Entity <BRYANT_GenReg.11> analyzed. Unit <BRYANT_GenReg.11> generated.
+
+Analyzing generic Entity <BRYANT_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 2
+Entity <BRYANT_LastReg> analyzed. Unit <BRYANT_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BRYANT_GenReg_1>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 22-bit register for signal <sAout>.
+    Found 22-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  47 D-type flip-flop(s).
+Unit <BRYANT_GenReg_1> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_2>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 20-bit register for signal <sAout>.
+    Found 20-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  43 D-type flip-flop(s).
+Unit <BRYANT_GenReg_2> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_3>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 18-bit register for signal <sAout>.
+    Found 18-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  39 D-type flip-flop(s).
+Unit <BRYANT_GenReg_3> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_4>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 16-bit register for signal <sAout>.
+    Found 16-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+Unit <BRYANT_GenReg_4> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_5>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 14-bit register for signal <sAout>.
+    Found 14-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+Unit <BRYANT_GenReg_5> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_6>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 12-bit register for signal <sAout>.
+    Found 12-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  27 D-type flip-flop(s).
+Unit <BRYANT_GenReg_6> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_7>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 10-bit register for signal <sAout>.
+    Found 10-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  23 D-type flip-flop(s).
+Unit <BRYANT_GenReg_7> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_8>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 8-bit register for signal <sAout>.
+    Found 8-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+Unit <BRYANT_GenReg_8> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_9>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 6-bit register for signal <sAout>.
+    Found 6-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+Unit <BRYANT_GenReg_9> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_10>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 4-bit register for signal <sAout>.
+    Found 4-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred  11 D-type flip-flop(s).
+Unit <BRYANT_GenReg_10> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_11>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 2-bit register for signal <sAout>.
+    Found 2-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+Unit <BRYANT_GenReg_11> synthesized.
+
+
+Synthesizing Unit <BRYANT_LastReg>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 2-bit register for signal <sSumout>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <BRYANT_LastReg> synthesized.
+
+
+Synthesizing Unit <BRYANT_First_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <BRYANT_First_BSlice> synthesized.
+
+
+Synthesizing Unit <BRYANT_GEN_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <BRYANT_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_First_2B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+Unit <BRYANT_RCA_First_2B> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_GEN_2B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+Unit <BRYANT_RCA_GEN_2B> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_2B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_RCA_2B.vhd".
+Unit <BRYANT_RCA_2B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 46
+ 1-bit register                                        : 12
+ 10-bit register                                       : 2
+ 12-bit register                                       : 2
+ 14-bit register                                       : 2
+ 16-bit register                                       : 2
+ 18-bit register                                       : 2
+ 2-bit register                                        : 14
+ 20-bit register                                       : 2
+ 22-bit register                                       : 2
+ 4-bit register                                        : 2
+ 6-bit register                                        : 2
+ 8-bit register                                        : 2
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 300
+ Flip-Flops                                            : 300
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BRYANT_RCA_2B> ...
+
+Optimizing unit <BRYANT_GenReg_1> ...
+
+Optimizing unit <BRYANT_GenReg_2> ...
+
+Optimizing unit <BRYANT_GenReg_3> ...
+
+Optimizing unit <BRYANT_GenReg_4> ...
+
+Optimizing unit <BRYANT_GenReg_5> ...
+
+Optimizing unit <BRYANT_GenReg_6> ...
+
+Optimizing unit <BRYANT_GenReg_7> ...
+
+Optimizing unit <BRYANT_GenReg_8> ...
+
+Optimizing unit <BRYANT_GenReg_9> ...
+
+Optimizing unit <BRYANT_GenReg_10> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BRYANT_RCA_2B, actual ratio is 3.
+
+Final Macro Processing ...
+
+Processing Unit <BRYANT_RCA_2B> :
+	Found 11-bit shift register for signal <InstBRYANT_RCA_GEN_REG11/sAout_1>.
+	Found 11-bit shift register for signal <InstBRYANT_RCA_GEN_REG11/sAout_0>.
+	Found 11-bit shift register for signal <InstBRYANT_RCA_GEN_REG11/sBout_1>.
+	Found 11-bit shift register for signal <InstBRYANT_RCA_GEN_REG11/sBout_0>.
+	Found 4-bit shift register for signal <InstBRYANT_RCA_GEN_REG4/sAout_1>.
+	Found 4-bit shift register for signal <InstBRYANT_RCA_GEN_REG4/sAout_0>.
+	Found 4-bit shift register for signal <InstBRYANT_RCA_GEN_REG4/sBout_1>.
+	Found 4-bit shift register for signal <InstBRYANT_RCA_GEN_REG4/sBout_0>.
+	Found 5-bit shift register for signal <InstBRYANT_RCA_GEN_REG5/sAout_1>.
+	Found 5-bit shift register for signal <InstBRYANT_RCA_GEN_REG5/sAout_0>.
+	Found 5-bit shift register for signal <InstBRYANT_RCA_GEN_REG5/sBout_1>.
+	Found 5-bit shift register for signal <InstBRYANT_RCA_GEN_REG5/sBout_0>.
+	Found 6-bit shift register for signal <InstBRYANT_RCA_GEN_REG6/sAout_1>.
+	Found 6-bit shift register for signal <InstBRYANT_RCA_GEN_REG6/sAout_0>.
+	Found 6-bit shift register for signal <InstBRYANT_RCA_GEN_REG6/sBout_1>.
+	Found 6-bit shift register for signal <InstBRYANT_RCA_GEN_REG6/sBout_0>.
+	Found 7-bit shift register for signal <InstBRYANT_RCA_GEN_REG7/sAout_1>.
+	Found 7-bit shift register for signal <InstBRYANT_RCA_GEN_REG7/sAout_0>.
+	Found 7-bit shift register for signal <InstBRYANT_RCA_GEN_REG7/sBout_1>.
+	Found 7-bit shift register for signal <InstBRYANT_RCA_GEN_REG7/sBout_0>.
+	Found 8-bit shift register for signal <InstBRYANT_RCA_GEN_REG8/sAout_1>.
+	Found 8-bit shift register for signal <InstBRYANT_RCA_GEN_REG8/sAout_0>.
+	Found 8-bit shift register for signal <InstBRYANT_RCA_GEN_REG8/sBout_1>.
+	Found 8-bit shift register for signal <InstBRYANT_RCA_GEN_REG8/sBout_0>.
+	Found 9-bit shift register for signal <InstBRYANT_RCA_GEN_REG9/sAout_1>.
+	Found 9-bit shift register for signal <InstBRYANT_RCA_GEN_REG9/sAout_0>.
+	Found 9-bit shift register for signal <InstBRYANT_RCA_GEN_REG9/sBout_1>.
+	Found 9-bit shift register for signal <InstBRYANT_RCA_GEN_REG9/sBout_0>.
+	Found 10-bit shift register for signal <InstBRYANT_RCA_GEN_REG10/sAout_1>.
+	Found 10-bit shift register for signal <InstBRYANT_RCA_GEN_REG10/sAout_0>.
+	Found 10-bit shift register for signal <InstBRYANT_RCA_GEN_REG10/sBout_1>.
+	Found 10-bit shift register for signal <InstBRYANT_RCA_GEN_REG10/sBout_0>.
+Unit <BRYANT_RCA_2B> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 60
+ Flip-Flops                                            : 60
+# Shift Registers                                      : 32
+ 10-bit shift register                                 : 4
+ 11-bit shift register                                 : 4
+ 4-bit shift register                                  : 4
+ 5-bit shift register                                  : 4
+ 6-bit shift register                                  : 4
+ 7-bit shift register                                  : 4
+ 8-bit shift register                                  : 4
+ 9-bit shift register                                  : 4
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BRYANT_RCA_2B.ngr
+Top Level Output File Name         : BRYANT_RCA_2B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 81
+#      GND                         : 1
+#      LUT2                        : 33
+#      LUT3                        : 33
+#      LUT3_D                      : 11
+#      LUT4                        : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 134
+#      FDE                         : 32
+#      FDRE                        : 102
+# Shift Registers                  : 32
+#      SRL16E                      : 32
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12sf363-12 
+
+ Number of Slices:                       80  out of   5472     1%  
+ Number of Slice Flip Flops:            132  out of  10944     1%  
+ Number of 4 input LUTs:                111  out of  10944     1%  
+    Number used as logic:                79
+    Number used as Shift registers:      32
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    240    31%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 166   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 1.819ns (Maximum Frequency: 549.753MHz)
+   Minimum input arrival time before clock: 2.671ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.819ns (frequency: 549.753MHz)
+  Total number of paths / destination ports: 260 / 118
+-------------------------------------------------------------------------
+Delay:               1.819ns (Levels of Logic = 0)
+  Source:            InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1 (FF)
+  Destination:       InstBRYANT_RCA_GEN_REG11/sAout_11 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1 to InstBRYANT_RCA_GEN_REG11/sAout_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16E:CLK->Q         1   1.802   0.000  InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1 (InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1)
+     FDE:D                     0.017          InstBRYANT_RCA_GEN_REG11/sAout_11
+    ----------------------------------------
+    Total                      1.819ns (1.819ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 322 / 315
+-------------------------------------------------------------------------
+Offset:              2.671ns (Levels of Logic = 1)
+  Source:            en (PAD)
+  Destination:       InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: en to InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           166   0.754   1.073  en_IBUF (en_IBUF)
+     SRL16E:CE                 0.844          InstBRYANT_RCA_GEN_REG11/Mshreg_sAout_1
+    ----------------------------------------
+    Total                      2.671ns (1.598ns logic, 1.073ns route)
+                                       (59.8% logic, 40.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstBRYANT_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstBRYANT_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstBRYANT_RCA_Last_REG1/scarryout (InstBRYANT_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 12.90 secs
+ 
+--> 
+
+
+Total memory usage is 637904 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+

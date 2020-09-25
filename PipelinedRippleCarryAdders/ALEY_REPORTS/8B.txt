@@ -1,0 +1,502 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+Reading design: BRYANT_RCA_8B.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BRYANT_RCA_8B.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BRYANT_RCA_8B"
+Output Format                      : NGC
+Target Device                      : xc4vfx12-12-sf363
+
+---- Source Options
+Top Module Name                    : BRYANT_RCA_8B
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Number of Regional Clock Buffers   : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd" in Library work.
+Architecture beh_first_bs of Entity BRYANT_first_bslice is up to date.
+Architecture beh_bs of Entity BRYANT_gen_bslice is up to date.
+Architecture reg16bit_arch of Entity BRYANT_firstreg is up to date.
+Architecture reg16bit_arch of Entity BRYANT_lastreg is up to date.
+Architecture reg16bit_arch of Entity BRYANT_genreg is up to date.
+Architecture reg16bit_arch of Entity BRYANT_sumreg is up to date.
+Architecture beh_first_2b of Entity BRYANT_rca_first_2b is up to date.
+Architecture beh_gen_2b of Entity BRYANT_rca_gen_2b is up to date.
+Architecture beh_first_4b of Entity BRYANT_rca_first_4b is up to date.
+Architecture beh_gen_4b of Entity BRYANT_rca_gen_4b is up to date.
+Architecture beh_first_6b of Entity BRYANT_rca_first_6b is up to date.
+Architecture beh_gen_6b of Entity BRYANT_rca_gen_6b is up to date.
+Architecture beh_first_8b of Entity BRYANT_rca_first_8b is up to date.
+Architecture beh_gen_8b of Entity BRYANT_rca_gen_8b is up to date.
+Compiling vhdl file "/home/ise/virtualboxtesting/BRYANT_RCA_8B.vhd" in Library work.
+Entity <BRYANT_RCA_8B> compiled.
+Entity <BRYANT_RCA_8B> (Architecture <BEH>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BRYANT_RCA_8B> in library <work> (architecture <BEH>) with generics.
+	W = 24
+	bbits = 8
+Analyzing hierarchy for entity <BRYANT_RCA_First_8B> in library <work> (architecture <beh_first_8b>) with generics.
+	BITS8 = 8
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+	w = 16
+
+Analyzing hierarchy for entity <BRYANT_RCA_GEN_8B> in library <work> (architecture <beh_gen_8b>) with generics.
+	BITS8 = 8
+
+Analyzing hierarchy for entity <BRYANT_GenReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+	w = 8
+
+Analyzing hierarchy for entity <BRYANT_LastReg> in library <work> (architecture <reg16bit_arch>) with generics.
+	bbits = 8
+
+Analyzing hierarchy for entity <BRYANT_First_BSlice> in library <work> (architecture <beh_first_bs>).
+
+Analyzing hierarchy for entity <BRYANT_GEN_BSlice> in library <work> (architecture <beh_bs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <BRYANT_RCA_8B> in library <work> (Architecture <BEH>).
+	W = 24
+	bbits = 8
+Entity <BRYANT_RCA_8B> analyzed. Unit <BRYANT_RCA_8B> generated.
+
+Analyzing generic Entity <BRYANT_RCA_First_8B> in library <work> (Architecture <beh_first_8b>).
+	BITS8 = 8
+Entity <BRYANT_RCA_First_8B> analyzed. Unit <BRYANT_RCA_First_8B> generated.
+
+Analyzing Entity <BRYANT_First_BSlice> in library <work> (Architecture <beh_first_bs>).
+Entity <BRYANT_First_BSlice> analyzed. Unit <BRYANT_First_BSlice> generated.
+
+Analyzing Entity <BRYANT_GEN_BSlice> in library <work> (Architecture <beh_bs>).
+Entity <BRYANT_GEN_BSlice> analyzed. Unit <BRYANT_GEN_BSlice> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.1> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+	w = 16
+Entity <BRYANT_GenReg.1> analyzed. Unit <BRYANT_GenReg.1> generated.
+
+Analyzing generic Entity <BRYANT_RCA_GEN_8B> in library <work> (Architecture <beh_gen_8b>).
+	BITS8 = 8
+Entity <BRYANT_RCA_GEN_8B> analyzed. Unit <BRYANT_RCA_GEN_8B> generated.
+
+Analyzing generic Entity <BRYANT_GenReg.2> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+	w = 8
+Entity <BRYANT_GenReg.2> analyzed. Unit <BRYANT_GenReg.2> generated.
+
+Analyzing generic Entity <BRYANT_LastReg> in library <work> (Architecture <reg16bit_arch>).
+	bbits = 8
+Entity <BRYANT_LastReg> analyzed. Unit <BRYANT_LastReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <BRYANT_GenReg_1>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 16-bit register for signal <sAout>.
+    Found 16-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred  41 D-type flip-flop(s).
+Unit <BRYANT_GenReg_1> synthesized.
+
+
+Synthesizing Unit <BRYANT_GenReg_2>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 8-bit register for signal <sAout>.
+    Found 8-bit register for signal <sBout>.
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <BRYANT_GenReg_2> synthesized.
+
+
+Synthesizing Unit <BRYANT_LastReg>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit register for signal <scarryout>.
+    Found 8-bit register for signal <sSumout>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <BRYANT_LastReg> synthesized.
+
+
+Synthesizing Unit <BRYANT_First_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+Unit <BRYANT_First_BSlice> synthesized.
+
+
+Synthesizing Unit <BRYANT_GEN_BSlice>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+    Found 1-bit xor2 for signal <SUM_Q>.
+    Found 1-bit xor2 for signal <Carry_Q$xor0000> created at line 55.
+Unit <BRYANT_GEN_BSlice> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_First_8B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+Unit <BRYANT_RCA_First_8B> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_GEN_8B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_COMPONENTS.vhd".
+Unit <BRYANT_RCA_GEN_8B> synthesized.
+
+
+Synthesizing Unit <BRYANT_RCA_8B>.
+    Related source file is "/home/ise/virtualboxtesting/BRYANT_RCA_8B.vhd".
+Unit <BRYANT_RCA_8B> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 10
+ 1-bit register                                        : 3
+ 16-bit register                                       : 2
+ 8-bit register                                        : 5
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+# Xors                                                 : 47
+ 1-bit xor2                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BRYANT_RCA_8B> ...
+
+Optimizing unit <BRYANT_GenReg_1> ...
+
+Optimizing unit <BRYANT_GenReg_2> ...
+
+Optimizing unit <BRYANT_LastReg> ...
+
+Optimizing unit <BRYANT_RCA_First_8B> ...
+
+Optimizing unit <BRYANT_RCA_GEN_8B> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BRYANT_RCA_8B, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 75
+ Flip-Flops                                            : 75
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BRYANT_RCA_8B.ngr
+Top Level Output File Name         : BRYANT_RCA_8B
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 76
+
+Cell Usage :
+# BELS                             : 77
+#      LUT2                        : 11
+#      LUT3                        : 30
+#      LUT3_D                      : 4
+#      LUT4                        : 22
+#      LUT4_D                      : 6
+#      MUXF5                       : 4
+# FlipFlops/Latches                : 75
+#      FDRE                        : 75
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 75
+#      IBUF                        : 50
+#      OBUF                        : 25
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 4vfx12sf363-12 
+
+ Number of Slices:                       49  out of   5472     0%  
+ Number of Slice Flip Flops:             67  out of  10944     0%  
+ Number of 4 input LUTs:                 73  out of  10944     0%  
+ Number of IOs:                          76
+ Number of bonded IOBs:                  76  out of    240    31%  
+    IOB Flip Flops:                       8
+ Number of GCLKs:                         1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 75    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -12
+
+   Minimum period: 2.329ns (Maximum Frequency: 429.350MHz)
+   Minimum input arrival time before clock: 4.898ns
+   Maximum output required time after clock: 3.793ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.329ns (frequency: 429.350MHz)
+  Total number of paths / destination ports: 330 / 34
+-------------------------------------------------------------------------
+Delay:               2.329ns (Levels of Logic = 4)
+  Source:            InstBRYANT_RCA_GEN_REG1/sBout_0 (FF)
+  Destination:       InstBRYANT_RCA_GEN_REG2/scarryout (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: InstBRYANT_RCA_GEN_REG1/sBout_0 to InstBRYANT_RCA_GEN_REG2/scarryout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.272   0.527  InstBRYANT_RCA_GEN_REG1/sBout_0 (InstBRYANT_RCA_GEN_REG1/sBout_0)
+     LUT3_D:I0->LO         1   0.147   0.122  InstBRYANT_RCA_GEN_8B1/c871 (N74)
+     LUT3:I2->O            6   0.147   0.415  InstBRYANT_RCA_GEN_8B1/c861 (InstBRYANT_RCA_GEN_8B1/c8_bdd10)
+     LUT3_D:I2->O          1   0.147   0.388  InstBRYANT_RCA_GEN_8B1/c841 (InstBRYANT_RCA_GEN_8B1/c8_bdd6)
+     LUT3:I2->O            1   0.147   0.000  InstBRYANT_RCA_GEN_8B1/c81 (c2)
+     FDRE:D                    0.017          InstBRYANT_RCA_GEN_REG2/scarryout
+    ----------------------------------------
+    Total                      2.329ns (0.877ns logic, 1.452ns route)
+                                       (37.7% logic, 62.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 270 / 191
+-------------------------------------------------------------------------
+Offset:              4.898ns (Levels of Logic = 8)
+  Source:            Op_A<1> (PAD)
+  Destination:       InstBRYANT_RCA_GEN_REG1/sSumout_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Op_A<1> to InstBRYANT_RCA_GEN_REG1/sSumout_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.754   0.567  Op_A_1_IBUF (Op_A_1_IBUF)
+     LUT4:I0->O            2   0.147   0.401  InstBRYANT_RCA_First_8B/c861 (InstBRYANT_RCA_First_8B/c8_bdd10)
+     LUT3:I2->O            2   0.147   0.401  InstBRYANT_RCA_First_8B/c851 (InstBRYANT_RCA_First_8B/c8_bdd8)
+     LUT3:I2->O            2   0.147   0.401  InstBRYANT_RCA_First_8B/c841 (InstBRYANT_RCA_First_8B/c8_bdd6)
+     LUT3:I2->O            2   0.147   0.401  InstBRYANT_RCA_First_8B/c831 (InstBRYANT_RCA_First_8B/c8_bdd4)
+     LUT3:I2->O            2   0.147   0.401  InstBRYANT_RCA_First_8B/c821 (InstBRYANT_RCA_First_8B/c8_bdd2)
+     LUT3:I2->O            2   0.147   0.527  InstBRYANT_RCA_First_8B/c811 (InstBRYANT_RCA_First_8B/c8_bdd0)
+     LUT3:I0->O            1   0.147   0.000  InstBRYANT_RCA_First_8B/s81 (s1<7>)
+     FDRE:D                    0.017          InstBRYANT_RCA_GEN_REG1/sSumout_7
+    ----------------------------------------
+    Total                      4.898ns (1.800ns logic, 3.098ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 25 / 25
+-------------------------------------------------------------------------
+Offset:              3.793ns (Levels of Logic = 1)
+  Source:            InstBRYANT_RCA_Last_REG1/scarryout (FF)
+  Destination:       Carry_Q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: InstBRYANT_RCA_Last_REG1/scarryout to Carry_Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.272   0.266  InstBRYANT_RCA_Last_REG1/scarryout (InstBRYANT_RCA_Last_REG1/scarryout)
+     OBUF:I->O                 3.255          Carry_Q_OBUF (Carry_Q)
+    ----------------------------------------
+    Total                      3.793ns (3.527ns logic, 0.266ns route)
+                                       (93.0% logic, 7.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.50 secs
+ 
+--> 
+
+
+Total memory usage is 632832 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+
